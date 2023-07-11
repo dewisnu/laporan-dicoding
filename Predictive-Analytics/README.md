@@ -95,4 +95,5 @@ Berikut adalah jumlah tingkat _Unemployment_ dari waktu ke waktu , tingkat pengg
 
 
 ![image](https://github.com/dewisnu/laporan-dicoding/assets/63925882/ae92ae52-bd41-4625-b1fb-229e637d8bec)
+
 Gambar 1. Grafik jumlah tingkat _Unemployment_ dari Tahun ke Tahun
