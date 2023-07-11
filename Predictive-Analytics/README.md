@@ -87,4 +87,4 @@ Tabel 1. _Generative Describe Statistics_
 
 - Hasil Analisis
   - Rata - Rata standart jumlah tingkat _Unemployment_ adalah 5.7 _percent_
-  - Jumlah Tingkat pengganguran terendah adalah 1.5 _percent_ dan tertinggi adalah 35.8 _percent_
+  - Jumlah Tingkat  _Unemployment_  terendah adalah 1.5 _percent_ dan tertinggi adalah 35.8 _percent_
