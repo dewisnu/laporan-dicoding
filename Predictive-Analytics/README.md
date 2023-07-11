@@ -25,4 +25,9 @@ Menjelaskan tujuan dari pernyataan masalah latar belakang:
     - Menggunakan LazyPredict untuk membandingkan 20+ Algoritma _Machine Learning_.
     - Dari 20 Algoritma akan diambil 4 algoritma terbaik untuk dilanjutkan ke tahap evaluasi
     - Menghitung metric yang akan menjadikan patokan kita untuk memilih model terbaik _(mse, rmse, r2)_
-    - Beriku adalah Rumus untuk menghitung _MSE_
+    - Berikut adalah Rumus untuk menghitung _MSE_
+      
+       mse = $1 \over n$ $\sum_{n=0}^n $ $(y_i - ŷ_p) ^ 2 $
+    - Berikut adalah rumus untuk menghitung RMSE
+    
+      rmse = $\sqrt{\sum\nolimits_{n=1}^n \left((y_i - ŷ_p) ^ 2 \over n \right) }$ 
