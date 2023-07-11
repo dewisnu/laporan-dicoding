@@ -88,3 +88,7 @@ Tabel 1. _Generative Describe Statistics_
 - Hasil Analisis
   - Rata - Rata standart jumlah tingkat _Unemployment_ adalah 5.7 _percent_
   - Jumlah Tingkat  _Unemployment_  terendah adalah 1.5 _percent_ dan tertinggi adalah 35.8 _percent_
+    
+### Visualization
+Berikut
+![image](https://github.com/dewisnu/laporan-dicoding/assets/63925882/ae92ae52-bd41-4625-b1fb-229e637d8bec)
