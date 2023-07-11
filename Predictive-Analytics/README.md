@@ -97,3 +97,8 @@ Berikut adalah jumlah tingkat _Unemployment_ dari waktu ke waktu , tingkat pengg
 ![image](https://github.com/dewisnu/laporan-dicoding/assets/63925882/ae92ae52-bd41-4625-b1fb-229e637d8bec)
 
 Gambar 1. Grafik jumlah tingkat _Unemployment_ dari Tahun ke Tahun
+
+Berikut adalah kolerasi antar fitur yang terdapat pada datasets, bisa disimpulkan semua fitur unrate_men - unrate_55_over sangat berpengaruh terhadap column unrate / column yang akan kita prediksi jadi kita akan menggunakan semua column
+![image](https://github.com/dewisnu/laporan-dicoding/assets/63925882/c5ec3a3f-1cc0-4b3d-899d-80d4e13fc25f)
+
+Gambar 2.  Korelasi antar Kolom
