@@ -104,4 +104,4 @@ Berikut adalah kolerasi antar fitur yang terdapat pada datasets, bisa disimpulka
 Gambar 2.  Korelasi antar Kolom
 
 
-### Data Preparation
+## Data Preparation
