@@ -21,3 +21,8 @@ Menjelaskan tujuan dari pernyataan masalah latar belakang:
     - Melakukan Encoding terhadap kolom yang bertipe object / categorical dengan menggunakan OHE Label Encoder (Jika bertipe data Ranking). Kebetulan di projek ini tidak ada
     - Melakukan pembagian dataset menjadi dua bagian dengan rasio 8:2 / 80% untuk train dan 20% untuk test.
     - Melakukan _MinMax Scaler_.
+- Untuk Pemilihan model terbaik data dapat dilakukan beberapa teknik, diantaranya :
+    - Menggunakan LazyPredict untuk membandingkan 20+ Algoritma _Machine Learning_.
+    - Dari 20 Algoritma akan diambil 4 algoritma terbaik untuk dilanjutkan ke tahap evaluasi
+    - Menghitung metric yang akan menjadikan patokan kita untuk memilih model terbaik _(mse, rmse, r2)_
+    - Beriku adalah Rumus untuk menghitung _MSE_
