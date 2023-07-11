@@ -38,4 +38,4 @@ Menjelaskan tujuan dari pernyataan masalah latar belakang:
       
     - Rumus rumus diatas dapat dihitung langsung menggunakan library python yaitu sklearn metrics
       
-Setelah goals dicapai, selanjutnya adalah tahap implementasi. Pada tahap ini pemerintah perlu bekerja sama dengan para pemangku usaha di bidang minyak bumi untuk menerapkan harga standard minyak bumi yang akan mereka jual, sehingga tidak ada lagi perusahaan perusahaan yang memanfaatkan kesempatan untuk mengambil keuntungan yang terlalu banyak sehingga menyebabkan harga harga barang-barang menjadi naik dan inflasi terus meningkat.
+Setelah goals dicapai, selanjutnya adalah tahap implementasi. Pada tahap ini pemerintah perlu bekerja sama dengan para pelaku usaha, corporasi, perguruan tinggi dan juga lembaga pelatihan agar memudahkan  penyerapan sumber daya manusia yang ada dan juga untuk membantu mengurangi jumlah penggaguran agar tidak melibihi standart jumlah penganguran yang telah ditentukan 
