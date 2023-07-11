@@ -90,5 +90,9 @@ Tabel 1. _Generative Describe Statistics_
   - Jumlah Tingkat  _Unemployment_  terendah adalah 1.5 _percent_ dan tertinggi adalah 35.8 _percent_
     
 ### Visualization
-Berikut
+Berikut adalah jumlah tingkat _Unemployment_ dari waktu ke waktu , tingkat pengganguran meningkat pada tahun 2020 - 2021 sempat menurun pada 2021 akhir dan untuk sekarang tingkat pengganguran mulai meningkat lagi.
+
+
+
 ![image](https://github.com/dewisnu/laporan-dicoding/assets/63925882/ae92ae52-bd41-4625-b1fb-229e637d8bec)
+Gambar 1. Grafik jumlah tingkat _Unemployment_ dari Tahun ke Tahun
