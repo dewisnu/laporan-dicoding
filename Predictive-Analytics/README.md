@@ -43,3 +43,15 @@ Setelah goals dicapai, selanjutnya adalah tahap implementasi. Pada tahap ini pem
 ## Data Understanding
 Data yang digunakan adalah data yang berasal dari kaggle, data ini berisikan jumlah  US _Unemployment_  dari tahun 1948-2021  berikut adalah datanya (https://www.kaggle.com/datasets/axeltorbenson/unemployment-data-19482021/code)
 
+
+### Variabel-variabel pada US _Unemployment_ 1948-2021 Datasets adalah sebagai berikut:
+- unrate: Total unemployment rate
+- unrate_men: Unemployment rate for men
+- unrate_women: Unemployment rate for women
+- unrate_16_to_17: Unemployment rate for people aged 16 to 17 years old
+- unrate_18_to_19: Unemployment rate for people aged 18 to 19 years old
+- unrate_20_to_24: Unemployment rate for people aged 20 to 24 years old
+- unrate_25_to_34: Unemployment rate for people aged 25 to 34 years old
+- unrate_35_to_44: Unemployment rate for people aged 35 to 44 years old
+- unrate_45_to_54: Unemployment rate for people aged 45 to 54 years old
+- unrate_55_over: Unemployment rate for people aged 55 to over 55 years old
