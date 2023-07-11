@@ -55,3 +55,18 @@ Data yang digunakan adalah data yang berasal dari kaggle, data ini berisikan jum
 - unrate_35_to_44: Unemployment rate for people aged 35 to 44 years old
 - unrate_45_to_54: Unemployment rate for people aged 45 to 54 years old
 - unrate_55_over: Unemployment rate for people aged 55 to over 55 years old
+
+
+Overview Data:
+
+``
+   - Datasets Name :  US Unemployment Data (1948-2021)
+    - Overall Columns:
+        - Valid : 887
+        - MissMatched : 0
+        - Missing : 0
+    - Source : FED of St. Louis, US Bureau of Labor Statistics
+    - Link : 
+    - License : U.S. Government Works
+    - Inspiration : What make unemployment increase?
+``
