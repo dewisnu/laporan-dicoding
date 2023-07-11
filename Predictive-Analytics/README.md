@@ -30,4 +30,12 @@ Menjelaskan tujuan dari pernyataan masalah latar belakang:
        mse = $1 \over n$ $\sum_{n=0}^n $ $(y_i - ŷ_p) ^ 2 $
     - Berikut adalah rumus untuk menghitung RMSE
     
-      rmse = $\sqrt{\sum\nolimits_{n=1}^n \left((y_i - ŷ_p) ^ 2 \over n \right) }$ 
+      rmse = $\sqrt{\sum\nolimits_{n=1}^n \left((y_i - ŷ_p) ^ 2 \over n \right) }$
+      
+    - Berikut adalah rumus untuk menghitung R2
+ 
+      $r^2$ = 1 - $SS_R \over SS_T$ =  1 - $ \sum_{i} (y_i - ŷ_p) ^ 2 \over \sum_{i} (y_i - ȳ) ^ 2$
+      
+    - Rumus rumus diatas dapat dihitung langsung menggunakan library python yaitu sklearn metrics
+      
+Setelah goals dicapai, selanjutnya adalah tahap implementasi. Pada tahap ini pemerintah perlu bekerja sama dengan para pemangku usaha di bidang minyak bumi untuk menerapkan harga standard minyak bumi yang akan mereka jual, sehingga tidak ada lagi perusahaan perusahaan yang memanfaatkan kesempatan untuk mengambil keuntungan yang terlalu banyak sehingga menyebabkan harga harga barang-barang menjadi naik dan inflasi terus meningkat.
