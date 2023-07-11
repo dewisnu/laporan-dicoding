@@ -8,5 +8,10 @@ Maka dari permasalahan tersebut penulis ingin membuat sebuah sistem prediksi sta
 ## Business Understanding
 ### Problem Statements
 Menjelaskan pernyataan masalah latar belakang:
-* bagaimana cara preprocessing pada data US Unemployment 1948-2021 yang akan digunakan untuk membuat yang baik ?
+* bagaimana cara _preprocessing_ pada data US Unemployment 1948-2021 yang akan digunakan untuk membuat model yang baik ?
 * Bagaimana cara memilih/membuat model yang terbaik untuk memprediksi standart jumlah penganguran ?
+
+### Goals
+Menjelaskan tujuan dari pernyataan masalah latar belakang:
+- Melakukan _preprocessing_ data sehingga data tersebut siap untuk di latih oleh model _Machine Learning_
+- Menggunakan library python yaitu _Lazy Predict_ yang dapat langsung membandingkan 20 algoritma  _Machine Learning_, selanjutnya adalah menghitung menggunakan beberapa _metric_ seperti _mse, rmse, r2_ yang akan menjadi tolak ukur model terbaik
