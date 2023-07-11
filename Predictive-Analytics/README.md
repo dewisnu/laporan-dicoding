@@ -102,3 +102,6 @@ Berikut adalah kolerasi antar fitur yang terdapat pada datasets, bisa disimpulka
 ![image](https://github.com/dewisnu/laporan-dicoding/assets/63925882/c5ec3a3f-1cc0-4b3d-899d-80d4e13fc25f)
 
 Gambar 2.  Korelasi antar Kolom
+
+
+### Data Preparation
