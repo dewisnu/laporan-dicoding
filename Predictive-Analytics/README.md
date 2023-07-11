@@ -39,3 +39,7 @@ Menjelaskan tujuan dari pernyataan masalah latar belakang:
     - Rumus rumus diatas dapat dihitung langsung menggunakan library python yaitu sklearn metrics
       
 Setelah goals dicapai, selanjutnya adalah tahap implementasi. Pada tahap ini pemerintah perlu bekerja sama dengan para pelaku usaha, corporasi, perguruan tinggi dan juga lembaga pelatihan agar memudahkan  penyerapan sumber daya manusia yang ada dan juga untuk membantu mengurangi jumlah penggaguran agar tidak melibihi standart jumlah penganguran yang telah ditentukan 
+
+## Data Understanding
+Data yang digunakan adalah daata yang berasal dari kaggle, data ini berisikan jumlah total  US _Unemployment_  1948-2021  berikut adalah datanya (https://www.kaggle.com/datasets/axeltorbenson/unemployment-data-19482021/code)
+
