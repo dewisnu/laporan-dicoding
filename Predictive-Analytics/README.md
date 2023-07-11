@@ -84,3 +84,7 @@ Tabel 1. _Generative Describe Statistics_
 |50%|5\.5|5\.3|5\.8|17\.8|14\.6|9\.1|5\.2|4\.0|3\.6|3\.6|
 |75%|6\.8|6\.7|7\.0|20\.9|17\.0|10\.8|6\.7|5\.0|4\.5|4\.4|
 |max|14\.4|13\.3|15\.7|35\.8|33\.3|25\.0|14\.3|11\.3|12\.1|13\.4|
+
+- Hasil Analisis
+  - Rata - Rata standart jumlah tingkat _Unemployment_ adalah 5.7 _percent_
+  - Jumlah Tingkat pengganguran terendah adalah 1.5 _percent_ dan tertinggi adalah 35.8 _percent_
