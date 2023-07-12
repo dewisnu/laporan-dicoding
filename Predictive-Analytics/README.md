@@ -13,8 +13,7 @@ Menjelaskan pernyataan masalah latar belakang:
 
 ### Goals
 Menjelaskan tujuan dari pernyataan masalah latar belakang:
-- Melakukan _preprocessing_ data sehingga data tersebut siap untuk di latih oleh model _Machine Learning_
-- Menggunakan library python yaitu _Lazy Predict_ yang dapat langsung membandingkan 20 algoritma  _Machine Learning_, selanjutnya adalah menghitung menggunakan beberapa _metric_ seperti _mse, rmse, r2_ yang akan menjadi tolak ukur model terbaik
+
 - Untuk _preprocessing_ data dapat dilakukan beberapa teknik, diantaranya :
     - Melakukan drop kolom pada kolom yang tidak penting / yang tidak berpengaruh pada prediksi jumlah _Unemployment_ .
     - _Handling null value_, bisa dengan _mean, median_. Untuk projek saya ini kebetulan data nya sudah clean.
