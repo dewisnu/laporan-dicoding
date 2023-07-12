@@ -303,7 +303,7 @@ Setelah mencoba prediksi untuk data test, akurasi yang dihasilkan menggunakan Mo
 ## Daftar Referensi
 Referensi
 
-[1] P. by&nbsp; &nbsp; 	admin and Admin, “Penyebab dan Dampak dari Pengangguran,” Biro Administrasi Kemahasiswaan, Alumni dan Informasi - Universitas Medan Area, https://bakai.uma.ac.id/2023/01/27/penyebab-dan-dampak-dari-pengangguran/ [accessed Jul. 12, 2023]. 
+[1]C. N. Rianda, “Analisis Dampak Pengangguran Berpengaruh Terhadap individual,” AT-TASYRI’: JURNAL ILMIAH PRODI MUAMALAH, p. 17, 2020. doi:10.47498/tasyri.v12i01.358 . 
 
 [2] Greatlearning. “A Complete understanding of LASSO Regression.” https://www.mygreatlearning.com/ [accessed Jul. 12 2023]
 
