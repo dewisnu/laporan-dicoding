@@ -137,3 +137,21 @@ X, y = final_df.drop('unrate', axis=1), final_df['unrate']
 
 x_train, x_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=767)
 ```
+
+## Modeling
+Pada tahap ini, akan dikembangkan model _Machine Learning_ dengan melakukan perbandingan 20+ Algoritma Kemudian akan kita pilih 4 Algoritma teratas, selanjutnya dari 4 Algoritma tersebut akan kita evaluasi performa metric nya di tahap Evaluation untuk menentukan model terbaik. 
+
+### _Lazy Predict_ (Hasil)
+
+Code : 
+Pertama kita  install library  nya terlebih dahulu
+
+`!pip install lazypredict`
+
+Selanjutnya masukan potongan kode berikut untuk mendapatkan hasil
+```
+from lazypredict.Supervised import LazyRegressor
+reg = LazyRegressor(verbose=0,ignore_warnings=False, custom_metric=None )
+models,predictions = reg.fit(x_train, x_test, y_train, y_test)
+models
+```
