@@ -126,3 +126,14 @@ Tabel 2. _Generative Describe Statistics_ setelah di terapkan _MinMaxScaller_
 |50%|0\.4000000000000001|0\.39759036144578325|0\.41333333333333333|0\.4795081967213114|0\.48128342245989314|0\.46218487394957986|0\.3780487804878049|0\.3898305084745762|0\.37735849056603776|0\.4|
 |75%|0\.5466666666666666|0\.5421686746987953|0\.5466666666666666|0\.6024590163934426|0\.6029411764705883|0\.5966386554621849|0\.524390243902439|0\.5423728813559321|0\.5283018867924528|0\.54|
 |max|1\.0|1\.0|1\.0|1\.0|1\.0|0\.9999999999999999|1\.0|1\.0|1\.0|1\.0|
+
+
+Untuk Train Test Split kita bisa menggunakan potongan kode berikut:
+
+```
+from sklearn.model_selection import train_test_split
+
+X, y = final_df.drop('unrate', axis=1), final_df['unrate']
+
+x_train, x_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=767)
+```
