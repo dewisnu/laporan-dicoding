@@ -218,11 +218,6 @@ Tabel 4. Model Terbaik hasil perbandingan menggunakan _lazy Predict_
 
 
 ### Model yang digunakan
-- <em> n_estimator </em>= Jumlah tree di forest. [6]
-- <em>max_depth </em> = kedalaman atau panjang pohon. Ia merupakan ukuran seberapa banyak pohon dapat membelah (splitting) untuk membagi setiap node ke dalam jumlah pengamatan yang diinginkan.[6]
-- <em> n_jobs </em> = jumlah job (pekerjaan) yang digunakan secara paralel. Ia merupakan komponen untuk mengontrol thread atau proses yang berjalan secara paralel. n_jobs=-1 artinya semua proses berjalan secara paralel.[6]
-- <em> subsample </em> = Fraksi sampel yang akan digunakan untuk menyesuaikan basis individu peserta didik. Jika lebih kecil dari 1,0 ini menghasilkan Stochastic Gradient Boosting. subsampel berinteraksi dengan parameter n_estimators. Memilih subsampel <1,0 mengarah pada pengurangan varians dan peningkatan bias. Nilai harus dalam rentang (0.0, 1.0]. [5] 
-
 
 #### Models
 - _Lasso CV_ = Lasso linear model with iterative fitting along a regularization path[5].Lasso regression is a regularization technique. It is used over regression methods for a more accurate prediction. This model uses shrinkage. Shrinkage is where data values are shrunk towards a central point as the mean. The lasso procedure encourages simple, sparse models (i.e. models with fewer parameters). This particular type of regression is well-suited for models showing high levels of multicollinearity or when you want to automate certain parts of model selection, like variable selection/parameter elimination[1].
@@ -232,8 +227,7 @@ Gambar 3.  _Lasso_ _Algorithm_
 - _NuSVR_ = Linear regression refers to a model that assumes a linear relationship between input variables and the target variable.With a single input variable, this relationship is a line, and with higher dimensions, this relationship can be thought of as a hyperplane that connects the input variables to the target variable. The coefficients of the model are found via an optimization process that seeks to minimize the sum squared error between the predictions (yhat) and the expected target values (y).
   
   loss = sum i=0 to n (y_i – yhat_i)^2
-  
-The benefit is that elastic net allows a balance of both penalties, which can result in better performance than a model with either one or the other penalty on some problems.
+  The benefit is that elastic net allows a balance of both penalties, which can result in better performance than a model with either one or the other penalty on some problems.
 
 
 
