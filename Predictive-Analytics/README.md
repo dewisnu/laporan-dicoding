@@ -437,8 +437,13 @@ Setelah mencoba prediksi untuk data test, akurasi yang dihasilkan menggunakan Mo
 
 Dalam kasus ini, langkah-langkah yang diambil adalah menggunakan Model LassoCV untuk memprediksi tingkat pengangguran. Meskipun hasil prediksi tidak sepenuhnya persis dengan data aktual, tetapi prediksi tersebut masih dapat menjadi patokan yang berguna untuk menentukan tingkat standar pengangguran yang akan diberlakukan. Dengan menggunakan model ini, diharapkan bahwa langkah-langkah yang diambil untuk mencegah peningkatan tingkat pengangguran dapat lebih efektif..
 
-## Daftar Referensi
-Referensi
+## Daftar Referensi Dan Kesimpulan
+### Kesimpulan 
+
+
+
+
+### Referensi
 
 [1]C. N. Rianda, “Analisis Dampak Pengangguran Berpengaruh Terhadap individual,” AT-TASYRI’: JURNAL ILMIAH PRODI MUAMALAH, p. 17, 2020. doi:10.47498/tasyri.v12i01.358 . 
 
