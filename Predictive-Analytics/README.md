@@ -281,7 +281,7 @@ Diketahui:
 ### Final Report
 
 
-Tabel 4. _Final Result of Model_
+Tabel 4. _prediction Result of Model_
 |index|y\_true|prediksi\_LassoCV|prediksi\_NuSVR|prediksi\_ElasticNetCV|prediksi\_LassoLarsCV|
 |---|---|---|---|---|---|
 |434|0\.7599999999999998|0\.8|0\.8|0\.8|0\.8|
