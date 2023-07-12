@@ -228,6 +228,66 @@ Tabel 4. Model Terbaik hasil perbandingan menggunakan _lazy Predict_
 
 
 
+
+
+## Evaluation
+Model yang digunakan adalah model regressi, sesuai penjelasan diatas saya akan menggunakan beberapa metric untuk evaluasi, berikut adalah list nya:
+- _Mean Squared Error_
+- _Root Mean Squared Error (RMSE)_
+- _R2_
+
+### MSE (Mean Squared Error)
+_Mean Squared Error (MSE)_ adalah Rata-rata Kesalahan kuadrat diantara nilai aktual dan nilai prediksi. Metode Mean Squared Error secara umum digunakan untuk mengecek estimasi berapa nilai kesalahan pada prediksi. Nilai Mean Squared Error yang rendah atau nilai mean squared error mendekati nol menunjukkan bahwa hasil prediksi sesuai dengan data aktual dan bisa dijadikan untuk perhitungan prediksi di periode mendatang. Metode Mean Squared Error biasanya digunakan untuk mengevaluasi metode pengukuran dengan model regressi.
+
+Kelebihan MSE yaitu sederhana dalam perhitungan. Sedangkan kelemahan yang dimiliki MSE adalah akurasi hasil prediksi sangat kecil karena tidak memperhatikan apakah hasil prediksi lebih besar atau lebih kecil dibandingkan kenyataannya
+
+mse = $1 \over n$ $\sum_{n=0}^n $ $(y_i - ŷ_i) ^ 2 $ 
+Diketahui:
+- n = Jumlah Data
+- yi = Actual Value / Nilai Sebenarnya
+- ŷi = Predicted Value / Nilai Prediksi
+
+
+### Root Mean Squared Error (RMSE)
+_Root Mean Squared Error (RMSE)_ merupakan salah satu cara untuk mengevaluasi model regresi dengan mengukur tingkat akurasi hasil perkiraan suatu model. RMSE dihitung dengan mengkuadratkan error (prediksi – observasi) dibagi dengan jumlah data (= rata-rata), lalu diakarkan.
+
+Nilai RMSE rendah menunjukkan bahwa variasi nilai yang dihasilkan oleh suatu model prakiraan mendekati variasi nilai obeservasinya. RMSE menghitung seberapa berbedanya seperangkat nilai. Semakin kecil nilai RMSE, semakin dekat nilai yang diprediksi dan diamati.
+
+Kelebihan dari RMSE yaitu memiliki tingkat sensitivitas yang cukup tinggi. Sedangkan kekurangannya RMSE tidak menggambarkan kesalahan rata-rata saja namun memiliki implikasi lain yang lebih sulit untuk diurai dan dipahami.
+
+rmse = $\sqrt{\sum\nolimits_{n=1}^n \left((y_i - ŷ_i) ^ 2 \over n \right) }$  
+
+Diketahui:
+- n = Jumlah Data
+- yi = Actual Value / Nilai Sebenarnya
+- ŷi = Predicted Value / Nilai Prediksi
+
+### R2 Score
+_R squared_ merupakan angka yang berkisar antara 0 sampai 1 yang mengindikasikan besarnya kombinasi variabel independen secara bersama – sama mempengaruhi nilai variabel dependen. Semakin mendekati angka satu, model yang dikeluarkan oleh regresi tersebut akan semakin baik.
+
+Jika kita perhatikan rumus R squared dibawah sangat dipengaruhi oleh nilai Y prediksi atau nilai Y dari hasil rumus dengan nilai Y aktual. Kenyataan yang sering muncul adalah nilai R squared akan semakin membaik (nilainya akan terus mendekati nilai 1) jika kita menambah variabel. Semakin banyak jumlah variabel yang menentukan nilai Y prediksi, maka nilai SSR akan semakin besar yang berakibat pada besarnya nilai R squared.
+
+Sifat R-squared yang akan semakin baik jika menambah variabel inilah yang menjadi kelemahan dari R squared itu sendiri. Semakin banyak variabel independen yang digunakan maka akan semakin banyak “noise” dalam model tersebut dan ini tidak dapat dijelaskan oleh R squared.
+
+ $r^2$ = 1 - $SS_R \over SS_T$ =  1 - $ \sum_{i} (y_i - ŷ_i) ^ 2 \over \sum_{i} (y_i - ȳ) ^ 2$
+ 
+Diketahui:
+- SSRes : Kuadrat dari selisih nilai Y prediksi dengan nilai rata-rata Y = ∑ (Ypred – Yrata-rata)²
+- SSTotal : Kuadrat dari selisih nilai Y aktual dengan nilai rata-rata Y = ∑ (Yaktual – Yrata-rata)²
+
+### Final Report
+Setelah melalui berbagai tahapan evaluasi diputuskan bahwa model terbaik yang akan digunakan adalah LassoCV sesuai dengan perhitungan matrix yang telah dijabarkan diatas. Berikut hasil akhir dari 4 Model terbaik.
+
+Tabel 5. _Final Result of Model_
+|index|Model\_Name|mse|r2|rmse|
+|---|---|---|---|---|
+|0|LassoCV|5\.7576947625830465e-05|0\.9982615994842791|0\.007587947523924402|
+|1|NuSVR|5\.584341223514932e-05|0\.9983139395082199|0\.007472844989369799|
+|2|ElasticNetCV|5\.83802975620606e-05|0\.9982373442223897|0\.0076407000701546055|
+|3|LassoLarsCV|5\.832448681004554e-05|0\.998239029296783|0\.007637046995406375|
+
+Setelah mencoba prediksi untuk data test, akurasi yang dihasilkan menggunakan Model LassoCV sudah sesuai Ekspektasi, walaupun masih ada perbedaan dari actual data, tetapi angka tersebut bisa menjadi patokan jumlah tingkat standard _Unemployment_ yang akan diberlakukan, langkah ini supaya tidak terjadi kenaikan tingkat pengganguran .
+
 ## Daftar Referensi
 Referensi
 [5] Boisberranger. J. D, et al., "Scikit Learn Documentations." https://scikit-learn.org/stable/ [accessed Jul. 12 2023]
