@@ -93,13 +93,15 @@ Berikut adalah jumlah tingkat _Unemployment_ dari waktu ke waktu , tingkat pengg
 
 
 
-![Grafik jumlah tingkat _Unemployment_ dari Tahun ke Tahun](https://private-user-images.githubusercontent.com/63925882/252686774-ae92ae52-bd41-4625-b1fb-229e637d8bec.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg5MTUxNTc2LCJuYmYiOjE2ODkxNTEyNzYsInBhdGgiOiIvNjM5MjU4ODIvMjUyNjg2Nzc0LWFlOTJhZTUyLWJkNDEtNDYyNS1iMWZiLTIyOWU2MzdkOGJlYy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMwNzEyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMDcxMlQwODQxMTZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yNDhjNThmYTM5NDdhMmI4MjJkMGQ3ODJmNzQ1MjZlNjRhMDA4MWM1N2Y3ZGQ0OTgyMjRhY2VjYTQxNGNiMzBhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.xoqMWe1VnPQ-OwqWV1dnYGf60UFP3hZuVt1M5y5NABc)
+![Grafik jumlah tingkat _Unemployment_ dari Tahun ke Tahun](https://github.com/dewisnu/laporan-dicoding/assets/63925882/23581127-ff57-4c87-a538-a9d1c6b1faf1)
+
 
 Gambar 1. Grafik jumlah tingkat _Unemployment_ dari Tahun ke Tahun
 
 Berikut adalah kolerasi antar fitur yang terdapat pada datasets, bisa disimpulkan semua fitur unrate_men - unrate_55_over sangat berpengaruh terhadap column unrate / column yang akan kita prediksi jadi kita akan menggunakan semua column
 
-![Korelasi antar Kolom](https://private-user-images.githubusercontent.com/63925882/252689775-c5ec3a3f-1cc0-4b3d-899d-80d4e13fc25f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg5MTUxNzg2LCJuYmYiOjE2ODkxNTE0ODYsInBhdGgiOiIvNjM5MjU4ODIvMjUyNjg5Nzc1LWM1ZWMzYTNmLTFjYzAtNGIzZC04OTlkLTgwZDRlMTNmYzI1Zi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMwNzEyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMDcxMlQwODQ0NDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mZTE2YjYyZGRjMTViZTNiM2YxZmEzOTYyOWFkOGNkMDg1MDE2YzZhZjVjNmQwNjhlYjI3ODhhOGU2OWU3NGFhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.-sjlq3M3EU5HcLjZOuQzB3je2YXzurb7jkHZ5K2NH0Q)
+![Korelasi antar Kolom](https://github.com/dewisnu/laporan-dicoding/assets/63925882/f2262b2b-3f11-430a-a848-be29404a1924)
+
 
 Gambar 2.  Korelasi antar Kolom
 
@@ -221,8 +223,8 @@ Tabel 4. Model Terbaik hasil perbandingan menggunakan _lazy Predict_
 #### Models
 - _Lasso CV_ =  Model linier Lasso dengan penyesuaian iteratif sepanjang jalur _regularization_[4]. Regresi Lasso adalah teknik _regularization_. Digunakan untuk metode regresi guna prediksi yang lebih akurat. Model ini menggunakan penyusutan (shrinkage). Penyusutan adalah saat nilai-nilai data disusutkan menuju titik tengah seperti mean. Prosedur Lasso mendorong penggunaan model sederhana dan jarang (yaitu model dengan parameter lebih sedikit). Jenis regresi khusus ini sangat cocok untuk model-model yang menunjukkan tingkat multikolinearitas yang tinggi atau ketika Anda ingin mengotomatisasi bagian-bagian tertentu dari pemilihan model, seperti pemilihan variabel/eliminasi parameter[2].
 
-![_Lasso_ _Algorithm](https://private-user-images.githubusercontent.com/63925882/252876435-34e6c4b2-a717-45e5-a56f-356f28549d97.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg5MTUyMTE1LCJuYmYiOjE2ODkxNTE4MTUsInBhdGgiOiIvNjM5MjU4ODIvMjUyODc2NDM1LTM0ZTZjNGIyLWE3MTctNDVlNS1hNTZmLTM1NmYyODU0OWQ5Ny5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMwNzEyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMDcxMlQwODUwMTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kYWE2NDRhZGE4YmY2NjFjZDAzZmMxZmYyODczOWY1MmFkYjQzOGVjOGVjYTEyZGY4YjY5ZDM0NjdjMDU2MmNhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9._0koue7-v7Bhj8NvVWCvvWdq7fQco_YpuPILl3DsvJc)
-Gambar 3.  _Lasso_ _Algorithm_
+![_Lasso_ _Algorithm](https://github.com/dewisnu/laporan-dicoding/assets/63925882/09d46b8f-e5ef-472a-b09c-b9d6b04fe7c0)
+
 
 - _NuSVR_ = Nu Support Vector Regression adalah metode regresi yang mirip dengan NuSVC. Untuk regresi, Nu Support Vector Regression menggunakan parameter nu untuk mengontrol jumlah vektor pendukung. Namun, berbeda dengan NuSVC, di mana nu menggantikan nilai C, dalam Nu Support Vector Regression nu menggantikan parameter epsilon dari epsilon-SVR.
 Implementasinya didasarkan pada libsvm.[4].
