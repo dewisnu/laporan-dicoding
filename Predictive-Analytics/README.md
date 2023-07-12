@@ -131,7 +131,6 @@ Tabel 2. _Generative Describe Statistics_ setelah di terapkan _MinMaxScaller_
 Untuk Train Test Split kita bisa menggunakan potongan kode berikut:
 
 ```
-from sklearn.model_selection import train_test_split
 
 X, y = final_df.drop('unrate', axis=1), final_df['unrate']
 
