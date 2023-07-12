@@ -437,11 +437,7 @@ Setelah mencoba prediksi untuk data test, akurasi yang dihasilkan menggunakan Mo
 
 Dalam kasus ini, langkah-langkah yang diambil adalah menggunakan Model LassoCV untuk memprediksi tingkat pengangguran. Meskipun hasil prediksi tidak sepenuhnya persis dengan data aktual, tetapi prediksi tersebut masih dapat menjadi patokan yang berguna untuk menentukan tingkat standar pengangguran yang akan diberlakukan. Dengan menggunakan model ini, diharapkan bahwa langkah-langkah yang diambil untuk mencegah peningkatan tingkat pengangguran dapat lebih efektif..
 
-## Daftar Referensi Dan Kesimpulan
-### Kesimpulan 
-
-
-
+## Daftar Referensi 
 
 ### Referensi
 
