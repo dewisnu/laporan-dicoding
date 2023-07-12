@@ -224,7 +224,7 @@ Tabel 4. Model Terbaik hasil perbandingan menggunakan _lazy Predict_
 ![image](https://github.com/dewisnu/laporan-dicoding/assets/63925882/34e6c4b2-a717-45e5-a56f-356f28549d97)
 Gambar 3.  _Lasso_ _Algorithm_
 
-_ _NuSVR_ = Nu Support Vector Regression.Similar to NuSVC, for regression, uses a parameter nu to control the number of support vectors. However, unlike NuSVC, where nu replaces C, here nu replaces the parameter epsilon of epsilon-SVR[5].
+- _NuSVR_ = Nu Support Vector Regression.Similar to NuSVC, for regression, uses a parameter nu to control the number of support vectors. However, unlike NuSVC, where nu replaces C, here nu replaces the parameter epsilon of epsilon-SVR[5].
 The implementation is based on libsvm.
 
 - _ElasticNetCV_ = Linear regression refers to a model that assumes a linear relationship between input variables and the target variable.With a single input variable, this relationship is a line, and with higher dimensions, this relationship can be thought of as a hyperplane that connects the input variables to the target variable. The coefficients of the model are found via an optimization process that seeks to minimize the sum squared error between the predictions (yhat) and the expected target values (y).
