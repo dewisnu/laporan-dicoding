@@ -130,14 +130,8 @@ Tabel 2. _Generative Describe Statistics_ setelah di terapkan _MinMaxScaller_
 |max|1\.0|1\.0|1\.0|1\.0|1\.0|0\.9999999999999999|1\.0|1\.0|1\.0|1\.0|
 
 
-Untuk Train Test Split kita bisa menggunakan potongan kode berikut:
+Untuk Train Test Split kita akan melakukan pembagian dataset menjadi dua bagian dengan rasio 8:2 / 80% untuk train dan 20% untuk test.Membagi dataset menjadi data latih (train) dan data uji (test) merupakan hal yang harus dilakukan sebelum membuat model. Mempertahankan sebagian data yang ada untuk menguji seberapa baik generalisasi model terhadap data baru
 
-```
-
-X, y = final_df.drop('unrate', axis=1), final_df['unrate']
-
-x_train, x_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=767)
-```
 
 ## Modeling
 Pada tahap ini, akan dikembangkan model _Machine Learning_ dengan melakukan perbandingan 20+ Algoritma Kemudian akan kita pilih 4 Algoritma teratas, selanjutnya dari 4 Algoritma tersebut akan kita evaluasi performa metric nya di tahap Evaluation untuk menentukan model terbaik. 
