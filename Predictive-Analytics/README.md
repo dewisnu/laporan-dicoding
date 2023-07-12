@@ -105,3 +105,24 @@ Gambar 2.  Korelasi antar Kolom
 
 
 ## Data Preparation
+
+Teknik Data Preparation yang Dilakukan adalah sebagai berikut:
+
+- Karena data tidak memiliki column categorical / object jadi kita skip langkah OHE / Label Encoder ini
+- _MinMaxScaller_() : ini merupakan proses scalling yang fungsinya data numeric akan tahan terhadap pencilan data / outliers. _MinMaxScaller_ ini mentransformasi / mengubah data numeric menjadi data numeric yang memiliki rentang 0 - 1
+- _TrainTestSplit_() : Membagi dataset menjadi data latih (train) dan data uji (test) merupakan hal yang harus dilakukan sebelum membuat model. Mempertahankan sebagian data yang ada untuk menguji seberapa baik generalisasi model terhadap data baru.
+
+Berikut adalah final data setelah digunakan fungsi _MinMaxScaller_() 
+
+Result:
+Tabel 2. _Generative Describe Statistics_ setelah di terapkan _MinMaxScaller_
+|index|unrate|unrate\_men|unrate\_women|unrate\_16\_to\_17|unrate\_18\_to\_19|unrate\_20\_to\_24|unrate\_25\_to\_34|unrate\_35\_to\_44|unrate\_45\_to\_54|unrate\_55\_over|
+|---|---|---|---|---|---|---|---|---|---|---|
+|count|834\.0|834\.0|834\.0|834\.0|834\.0|834\.0|834\.0|834\.0|834\.0|834\.0|
+|mean|0\.417154276578737|0\.4168761376441017|0\.43296562749800155|0\.4789332468451469|0\.48213621616076124|0\.4681800777865103|0\.3976721062174651|0\.4116164695362354|0\.40683679471517126|0\.42999999999999994|
+|std|0\.19573715520207247|0\.19556493389700175|0\.18963166600479284|0\.18327714161848765|0\.1866145945664553|0\.1970961882357763|0\.19428410335392224|0\.1961303756076531|0\.19820918797499196|0\.18907559290382453|
+|min|0\.0|0\.0|0\.0|0\.0|0\.0|0\.0|0\.0|0\.0|0\.0|0\.0|
+|25%|0\.27999999999999997|0\.2771084337349398|0\.29333333333333333|0\.360655737704918|0\.3636363636363636|0\.3529411764705882|0\.25609756097560976|0\.2711864406779661|0\.26415094339622636|0\.2799999999999999|
+|50%|0\.4000000000000001|0\.39759036144578325|0\.41333333333333333|0\.4795081967213114|0\.48128342245989314|0\.46218487394957986|0\.3780487804878049|0\.3898305084745762|0\.37735849056603776|0\.4|
+|75%|0\.5466666666666666|0\.5421686746987953|0\.5466666666666666|0\.6024590163934426|0\.6029411764705883|0\.5966386554621849|0\.524390243902439|0\.5423728813559321|0\.5283018867924528|0\.54|
+|max|1\.0|1\.0|1\.0|1\.0|1\.0|0\.9999999999999999|1\.0|1\.0|1\.0|1\.0|
