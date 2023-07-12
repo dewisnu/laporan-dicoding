@@ -224,6 +224,9 @@ Tabel 4. Model Terbaik hasil perbandingan menggunakan _lazy Predict_
 - <em> subsample </em> = Fraksi sampel yang akan digunakan untuk menyesuaikan basis individu peserta didik. Jika lebih kecil dari 1,0 ini menghasilkan Stochastic Gradient Boosting. subsampel berinteraksi dengan parameter n_estimators. Memilih subsampel <1,0 mengarah pada pengurangan varians dan peningkatan bias. Nilai harus dalam rentang (0.0, 1.0]. [5] 
 
 
+#### Models
+
+
 
 ## Daftar Referensi
 Referensi
