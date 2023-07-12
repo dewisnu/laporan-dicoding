@@ -225,6 +225,12 @@ Tabel 4. Model Terbaik hasil perbandingan menggunakan _lazy Predict_
 
 
 #### Models
+- _Lasso CV_ = Lasso linear model with iterative fitting along a regularization path[5].Lasso regression is a regularization technique. It is used over regression methods for a more accurate prediction. This model uses shrinkage. Shrinkage is where data values are shrunk towards a central point as the mean. The lasso procedure encourages simple, sparse models (i.e. models with fewer parameters). This particular type of regression is well-suited for models showing high levels of multicollinearity or when you want to automate certain parts of model selection, like variable selection/parameter elimination[1].
+![image](https://github.com/dewisnu/laporan-dicoding/assets/63925882/34e6c4b2-a717-45e5-a56f-356f28549d97)
+Gambar 3.  _Lasso_ _Algorithm_
+- _NuSVR_ = 
+
+
 
 
 
@@ -278,7 +284,7 @@ Diketahui:
 ### Final Report
 Setelah melalui berbagai tahapan evaluasi diputuskan bahwa model terbaik yang akan digunakan adalah LassoCV sesuai dengan perhitungan matrix yang telah dijabarkan diatas. Berikut hasil akhir dari 4 Model terbaik.
 
-Tabel 5. _Final Result of Model_
+Tabel 4. _Final Result of Model_
 |index|Model\_Name|mse|r2|rmse|
 |---|---|---|---|---|
 |0|LassoCV|5\.7576947625830465e-05|0\.9982615994842791|0\.007587947523924402|
@@ -291,7 +297,6 @@ Setelah mencoba prediksi untuk data test, akurasi yang dihasilkan menggunakan Mo
 ## Daftar Referensi
 Referensi
 
-
+[1] Greatlearning. “A Complete understanding of LASSO Regression.” https://www.mygreatlearning.com/ [accessed Jul. 12 2023]
 [5] Boisberranger. J. D, et al., "Scikit Learn Documentations." https://scikit-learn.org/stable/ [accessed Jul. 12 2023]
-
 [6] Dicoding. "Kelas Machine Learning Terapan." https://www.dicoding.com/academies/319 [accessed Jul. 12 2023]
