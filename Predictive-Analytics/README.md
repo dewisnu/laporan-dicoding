@@ -94,12 +94,12 @@ Berikut adalah jumlah tingkat _Unemployment_ dari waktu ke waktu , tingkat pengg
 
 
 
-![image](https://github.com/dewisnu/laporan-dicoding/assets/63925882/ae92ae52-bd41-4625-b1fb-229e637d8bec)
+![Grafik jumlah tingkat _Unemployment_ dari Tahun ke Tahun](https://private-user-images.githubusercontent.com/63925882/252686774-ae92ae52-bd41-4625-b1fb-229e637d8bec.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg5MTUxNTc2LCJuYmYiOjE2ODkxNTEyNzYsInBhdGgiOiIvNjM5MjU4ODIvMjUyNjg2Nzc0LWFlOTJhZTUyLWJkNDEtNDYyNS1iMWZiLTIyOWU2MzdkOGJlYy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMwNzEyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMDcxMlQwODQxMTZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yNDhjNThmYTM5NDdhMmI4MjJkMGQ3ODJmNzQ1MjZlNjRhMDA4MWM1N2Y3ZGQ0OTgyMjRhY2VjYTQxNGNiMzBhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.xoqMWe1VnPQ-OwqWV1dnYGf60UFP3hZuVt1M5y5NABc)
 
 Gambar 1. Grafik jumlah tingkat _Unemployment_ dari Tahun ke Tahun
 
 Berikut adalah kolerasi antar fitur yang terdapat pada datasets, bisa disimpulkan semua fitur unrate_men - unrate_55_over sangat berpengaruh terhadap column unrate / column yang akan kita prediksi jadi kita akan menggunakan semua column
-![image](https://github.com/dewisnu/laporan-dicoding/assets/63925882/c5ec3a3f-1cc0-4b3d-899d-80d4e13fc25f)
+![image](https://github.com/dewisnu/laporan-dicoding/assets/63925882/c5ec3a3f-1cc0-4b3d-899d-80d4e13fc25f)s
 
 Gambar 2.  Korelasi antar Kolom
 
