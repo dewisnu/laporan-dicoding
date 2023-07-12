@@ -228,7 +228,7 @@ Gambar 3.  _Lasso_ _Algorithm_
   
   loss = sum i=0 to n (y_i – yhat_i)^2
 
-  The benefit is that elastic net allows a balance of both penalties, which can result in better performance than a model with either one or the other penalty on some problems.
+  The benefit is that elastic net allows a balance of both penalties, which can result in better performance than a model with either one or the other penalty on some problems[2].
 
 
 
@@ -297,6 +297,8 @@ Setelah mencoba prediksi untuk data test, akurasi yang dihasilkan menggunakan Mo
 Referensi
 
 [1] Greatlearning. “A Complete understanding of LASSO Regression.” https://www.mygreatlearning.com/ [accessed Jul. 12 2023]
+
+[2] J. Brownlee, “How to develop elastic net regression models in Python,” MachineLearningMastery.com, https://machinelearningmastery.com/elastic-net-regression-in-python/ [accessed Jul. 12, 2023]. 
 
 [5] Boisberranger. J. D, et al., "Scikit Learn Documentations." https://scikit-learn.org/stable/ [accessed Jul. 12 2023]
 
