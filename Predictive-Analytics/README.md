@@ -1,9 +1,9 @@
 # Laporan Proyek _Machine Learning_ - I Gede Ari Wisnu Sanjaya
 ---
 ## Domain Proyek
-Tingkat pengangguran adalah indikator kunci dalam analisis ekonomi dan penilaian kesehatan pasar tenaga kerja. Tingkat pengangguran yang tinggi dapat mengindikasikan ketidakseimbangan ekonomi dan dampak sosial yang serius, sedangkan tingkat pengangguran yang rendah mencerminkan pertumbuhan ekonomi yang sehat dan peluang kerja yang lebih baik.
+Tingkat pengangguran adalah indikator kunci dalam analisis ekonomi dan penilaian kesehatan pasar tenaga kerja. Tingkat pengangguran yang tinggi dapat mengindikasikan ketidakseimbangan ekonomi, dampak sosial yang serius Meningkatkan kemiskinan. Memicu tindakan kriminalitas atau kejahatan. Munculnya ketidaksetaraan politik dan sosial, sedangkan tingkat pengangguran yang rendah mencerminkan pertumbuhan ekonomi yang sehat dan peluang kerja yang lebih baik[].
 
-Maka dari permasalahan tersebut penulis ingin membuat sebuah sistem prediksi standart jumlah pengganguran di suatu negara. Agar memudahkan  dalam memahami dan mengelola tingkat pengangguran di suatu negara, serta mendukung perencanaan ekonomi yang lebih baik, kebijakan yang efektif, dan pengambilan keputusan yang tepat di berbagai sektor.
+Maka dari permasalahan tersebut penulis ingin membuat sebuah sistem prediksi standart jumlah pengganguran di suatu negara. Agar memudahkan  dalam memahami dan mengelola tingkat pengangguran di suatu negara, serta mendukung perencanaan ekonomi yang lebih baik, kebijakan yang efektif, dan pengambilan keputusan yang tepat di berbagai sektor.[1]
 
 ## Business Understanding
 ### Problem Statements
@@ -220,20 +220,20 @@ Tabel 4. Model Terbaik hasil perbandingan menggunakan _lazy Predict_
 ### Model yang digunakan
 
 #### Models
-- _Lasso CV_ = Lasso linear model with iterative fitting along a regularization path[5].Lasso regression is a regularization technique. It is used over regression methods for a more accurate prediction. This model uses shrinkage. Shrinkage is where data values are shrunk towards a central point as the mean. The lasso procedure encourages simple, sparse models (i.e. models with fewer parameters). This particular type of regression is well-suited for models showing high levels of multicollinearity or when you want to automate certain parts of model selection, like variable selection/parameter elimination[1].
+- _Lasso CV_ = Lasso linear model with iterative fitting along a regularization path[4].Lasso regression is a regularization technique. It is used over regression methods for a more accurate prediction. This model uses shrinkage. Shrinkage is where data values are shrunk towards a central point as the mean. The lasso procedure encourages simple, sparse models (i.e. models with fewer parameters). This particular type of regression is well-suited for models showing high levels of multicollinearity or when you want to automate certain parts of model selection, like variable selection/parameter elimination[2].
 ![image](https://github.com/dewisnu/laporan-dicoding/assets/63925882/34e6c4b2-a717-45e5-a56f-356f28549d97)
 Gambar 3.  _Lasso_ _Algorithm_
 
 - _NuSVR_ = Nu Support Vector Regression.Similar to NuSVC, for regression, uses a parameter nu to control the number of support vectors. However, unlike NuSVC, where nu replaces C, here nu replaces the parameter epsilon of epsilon-SVR.
-The implementation is based on libsvm[5].
+The implementation is based on libsvm[4].
 
 - _ElasticNetCV_ = Linear regression refers to a model that assumes a linear relationship between input variables and the target variable.With a single input variable, this relationship is a line, and with higher dimensions, this relationship can be thought of as a hyperplane that connects the input variables to the target variable. The coefficients of the model are found via an optimization process that seeks to minimize the sum squared error between the predictions (yhat) and the expected target values (y).
   
   loss = sum i=0 to n (y_i – yhat_i)^2
 
-  The benefit is that elastic net allows a balance of both penalties, which can result in better performance than a model with either one or the other penalty on some problems[2].
+  The benefit is that elastic net allows a balance of both penalties, which can result in better performance than a model with either one or the other penalty on some problems[3].
 
-- _LassoLarsCV_  = Cross-validated Lasso using the LARS algorithm[5]. 
+- _LassoLarsCV_  = Cross-validated Lasso using the LARS algorithm[4]. 
 
 
 
@@ -302,11 +302,12 @@ Setelah mencoba prediksi untuk data test, akurasi yang dihasilkan menggunakan Mo
 
 ## Daftar Referensi
 Referensi
+[1] P. by&nbsp; &nbsp; 	admin and Admin, “Penyebab dan Dampak dari Pengangguran,” Biro Administrasi Kemahasiswaan, Alumni dan Informasi - Universitas Medan Area, https://bakai.uma.ac.id/2023/01/27/penyebab-dan-dampak-dari-pengangguran/ [accessed Jul. 12, 2023]. 
 
-[1] Greatlearning. “A Complete understanding of LASSO Regression.” https://www.mygreatlearning.com/ [accessed Jul. 12 2023]
+[2] Greatlearning. “A Complete understanding of LASSO Regression.” https://www.mygreatlearning.com/ [accessed Jul. 12 2023]
 
-[2] J. Brownlee, “How to develop elastic net regression models in Python,” MachineLearningMastery.com, https://machinelearningmastery.com/elastic-net-regression-in-python/ [accessed Jul. 12, 2023]. 
+[3] J. Brownlee, “How to develop elastic net regression models in Python,” MachineLearningMastery.com, https://machinelearningmastery.com/elastic-net-regression-in-python/ [accessed Jul. 12, 2023]. 
 
-[5] Boisberranger. J. D, et al., "Scikit Learn Documentations." https://scikit-learn.org/stable/ [accessed Jul. 12 2023]
+[4] Boisberranger. J. D, et al., "Scikit Learn Documentations." https://scikit-learn.org/stable/ [accessed Jul. 12 2023]
 
-[6] Dicoding. "Kelas Machine Learning Terapan." https://www.dicoding.com/academies/319 [accessed Jul. 12 2023]
+
