@@ -219,28 +219,19 @@ Tabel 4. Model Terbaik hasil perbandingan menggunakan _lazy Predict_
 ### Model yang digunakan
 
 #### Models
-- _Lasso CV_ = Lasso linear model with iterative fitting along a regularization path[4].Lasso regression is a regularization technique. It is used over regression methods for a more accurate prediction. This model uses shrinkage. Shrinkage is where data values are shrunk towards a central point as the mean. The lasso procedure encourages simple, sparse models (i.e. models with fewer parameters). This particular type of regression is well-suited for models showing high levels of multicollinearity or when you want to automate certain parts of model selection, like variable selection/parameter elimination[2].
+- _Lasso CV_ =  Model linier Lasso dengan penyesuaian iteratif sepanjang jalur _regularization_[4]. Regresi Lasso adalah teknik _regularization_. Digunakan untuk metode regresi guna prediksi yang lebih akurat. Model ini menggunakan penyusutan (shrinkage). Penyusutan adalah saat nilai-nilai data disusutkan menuju titik tengah seperti mean. Prosedur Lasso mendorong penggunaan model sederhana dan jarang (yaitu model dengan parameter lebih sedikit). Jenis regresi khusus ini sangat cocok untuk model-model yang menunjukkan tingkat multikolinearitas yang tinggi atau ketika Anda ingin mengotomatisasi bagian-bagian tertentu dari pemilihan model, seperti pemilihan variabel/eliminasi parameter[2].
 
 ![_Lasso_ _Algorithm](https://private-user-images.githubusercontent.com/63925882/252876435-34e6c4b2-a717-45e5-a56f-356f28549d97.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg5MTUyMTE1LCJuYmYiOjE2ODkxNTE4MTUsInBhdGgiOiIvNjM5MjU4ODIvMjUyODc2NDM1LTM0ZTZjNGIyLWE3MTctNDVlNS1hNTZmLTM1NmYyODU0OWQ5Ny5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMwNzEyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMDcxMlQwODUwMTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kYWE2NDRhZGE4YmY2NjFjZDAzZmMxZmYyODczOWY1MmFkYjQzOGVjOGVjYTEyZGY4YjY5ZDM0NjdjMDU2MmNhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9._0koue7-v7Bhj8NvVWCvvWdq7fQco_YpuPILl3DsvJc)
 Gambar 3.  _Lasso_ _Algorithm_
 
-- _NuSVR_ = Nu Support Vector Regression.Similar to NuSVC, for regression, uses a parameter nu to control the number of support vectors. However, unlike NuSVC, where nu replaces C, here nu replaces the parameter epsilon of epsilon-SVR.
-The implementation is based on libsvm[4].
+- _NuSVR_ = Nu Support Vector Regression adalah metode regresi yang mirip dengan NuSVC. Untuk regresi, Nu Support Vector Regression menggunakan parameter nu untuk mengontrol jumlah vektor pendukung. Namun, berbeda dengan NuSVC, di mana nu menggantikan nilai C, dalam Nu Support Vector Regression nu menggantikan parameter epsilon dari epsilon-SVR.
+Implementasinya didasarkan pada libsvm.[4].
 
-- _ElasticNetCV_ = Linear regression refers to a model that assumes a linear relationship between input variables and the target variable.With a single input variable, this relationship is a line, and with higher dimensions, this relationship can be thought of as a hyperplane that connects the input variables to the target variable. The coefficients of the model are found via an optimization process that seeks to minimize the sum squared error between the predictions (yhat) and the expected target values (y).
+- _ElasticNetCV_ = Regresi linear mengacu pada model yang mengasumsikan hubungan linear antara variabel input dan variabel target. Dengan satu variabel input, hubungan ini berupa garis lurus, dan dengan dimensi yang lebih tinggi, hubungan ini dapat dianggap sebagai hiperbidang yang menghubungkan variabel input dengan variabel target. Koefisien model ditemukan melalui proses optimisasi yang bertujuan untuk meminimalkan kesalahan kuadrat antara prediksi (yhat) dan nilai target yang diharapkan (y).[3].
   
   loss = sum i=0 to n (y_i – yhat_i)^2
 
-  The benefit is that elastic net allows a balance of both penalties, which can result in better performance than a model with either one or the other penalty on some problems[3].
-
-- _LassoLarsCV_  = Cross-validated Lasso using the LARS algorithm[4]. 
-
-
-
-
-
-
-
+- _LassoLarsCV_  = Model ini menggunakan   penggunaan teknik validasi silang (cross-validation) dan algoritma LARS (Least Angle Regression) untuk melakukan seleksi variabel secara otomatis. Dengan menggunakan metode ini, kita dapat memperoleh model yang lebih optimal dengan mengidentifikasi variabel yang memiliki dampak signifikan terhadap hasil prediksi.[4]. 
 
 ## Evaluation
 Model yang digunakan adalah model regressi, sesuai penjelasan diatas saya akan menggunakan beberapa metric untuk evaluasi, berikut adalah list nya:
