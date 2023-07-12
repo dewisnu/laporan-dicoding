@@ -216,3 +216,17 @@ Tabel 4. Model Terbaik hasil perbandingan menggunakan _lazy Predict_
 |LassoLarsCV|0\.9981382881722987|0\.9982392243557282|0\.007636624014040912|0\.017354726791381836|
 
 
+
+### Model yang digunakan
+- <em> n_estimator </em>= Jumlah tree di forest. [6]
+- <em>max_depth </em> = kedalaman atau panjang pohon. Ia merupakan ukuran seberapa banyak pohon dapat membelah (splitting) untuk membagi setiap node ke dalam jumlah pengamatan yang diinginkan.[6]
+- <em> n_jobs </em> = jumlah job (pekerjaan) yang digunakan secara paralel. Ia merupakan komponen untuk mengontrol thread atau proses yang berjalan secara paralel. n_jobs=-1 artinya semua proses berjalan secara paralel.[6]
+- <em> subsample </em> = Fraksi sampel yang akan digunakan untuk menyesuaikan basis individu peserta didik. Jika lebih kecil dari 1,0 ini menghasilkan Stochastic Gradient Boosting. subsampel berinteraksi dengan parameter n_estimators. Memilih subsampel <1,0 mengarah pada pengurangan varians dan peningkatan bias. Nilai harus dalam rentang (0.0, 1.0]. [5] 
+
+
+
+## Daftar Referensi
+Referensi
+[5] Boisberranger. J. D, et al., "Scikit Learn Documentations." https://scikit-learn.org/stable/ [accessed Jul. 12 2023]
+
+[6] Dicoding. "Kelas Machine Learning Terapan." https://www.dicoding.com/academies/319 [accessed Jul. 12 2023]
