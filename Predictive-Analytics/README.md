@@ -228,7 +228,10 @@ Tabel 4. Model Terbaik hasil perbandingan menggunakan _lazy Predict_
 - _Lasso CV_ = Lasso linear model with iterative fitting along a regularization path[5].Lasso regression is a regularization technique. It is used over regression methods for a more accurate prediction. This model uses shrinkage. Shrinkage is where data values are shrunk towards a central point as the mean. The lasso procedure encourages simple, sparse models (i.e. models with fewer parameters). This particular type of regression is well-suited for models showing high levels of multicollinearity or when you want to automate certain parts of model selection, like variable selection/parameter elimination[1].
 ![image](https://github.com/dewisnu/laporan-dicoding/assets/63925882/34e6c4b2-a717-45e5-a56f-356f28549d97)
 Gambar 3.  _Lasso_ _Algorithm_
-- _NuSVR_ = 
+
+- _NuSVR_ = Linear regression refers to a model that assumes a linear relationship between input variables and the target variable.With a single input variable, this relationship is a line, and with higher dimensions, this relationship can be thought of as a hyperplane that connects the input variables to the target variable. The coefficients of the model are found via an optimization process that seeks to minimize the sum squared error between the predictions (yhat) and the expected target values (y).
+
+loss = sum i=0 to n (y_i – yhat_i)^2
 
 
 
