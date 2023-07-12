@@ -298,4 +298,5 @@ Referensi
 
 [1] Greatlearning. “A Complete understanding of LASSO Regression.” https://www.mygreatlearning.com/ [accessed Jul. 12 2023]
 [5] Boisberranger. J. D, et al., "Scikit Learn Documentations." https://scikit-learn.org/stable/ [accessed Jul. 12 2023]
+
 [6] Dicoding. "Kelas Machine Learning Terapan." https://www.dicoding.com/academies/319 [accessed Jul. 12 2023]
