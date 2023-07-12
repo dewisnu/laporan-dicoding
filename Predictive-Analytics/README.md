@@ -298,7 +298,9 @@ Tabel 4. _Final Result of Model_
 |2|ElasticNetCV|5\.83802975620606e-05|0\.9982373442223897|0\.0076407000701546055|
 |3|LassoLarsCV|5\.832448681004554e-05|0\.998239029296783|0\.007637046995406375|
 
-Setelah mencoba prediksi untuk data test, akurasi yang dihasilkan menggunakan Model LassoCV sudah sesuai Ekspektasi, walaupun masih ada perbedaan dari actual data, tetapi angka tersebut bisa menjadi patokan jumlah tingkat standard _Unemployment_ yang akan diberlakukan, langkah ini supaya tidak terjadi kenaikan tingkat pengganguran .
+Setelah mencoba prediksi untuk data test, akurasi yang dihasilkan menggunakan Model LassoCV sudah sesuai Ekspektasi, Dalam konteks ini, "sesuai ekspektasi" berarti bahwa hasil prediksi yang dihasilkan menggunakan Model LassoCV cukup akurat dan mendekati nilai aktual. Meskipun masih ada perbedaan antara prediksi dan data aktual, perbedaan tersebut mungkin masih dalam kisaran yang dapat diterima atau dianggap sebagai tingkat toleransi yang dapat diterima.
+
+Dalam kasus ini, langkah-langkah yang diambil adalah menggunakan Model LassoCV untuk memprediksi tingkat pengangguran. Meskipun hasil prediksi tidak sepenuhnya persis dengan data aktual, tetapi prediksi tersebut masih dapat menjadi patokan yang berguna untuk menentukan tingkat standar pengangguran yang akan diberlakukan. Dengan menggunakan model ini, diharapkan bahwa langkah-langkah yang diambil untuk mencegah peningkatan tingkat pengangguran dapat lebih efektif..
 
 ## Daftar Referensi
 Referensi
