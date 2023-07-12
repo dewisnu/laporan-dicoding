@@ -279,9 +279,153 @@ Diketahui:
 - SSTotal : Kuadrat dari selisih nilai Y aktual dengan nilai rata-rata Y = ∑ (Yaktual – Yrata-rata)²
 
 ### Final Report
-Setelah melalui berbagai tahapan evaluasi diputuskan bahwa model terbaik yang akan digunakan adalah LassoCV sesuai dengan perhitungan matrix yang telah dijabarkan diatas. Berikut hasil akhir dari 4 Model terbaik.
+
 
 Tabel 4. _Final Result of Model_
+|index|y\_true|prediksi\_LassoCV|prediksi\_NuSVR|prediksi\_ElasticNetCV|prediksi\_LassoLarsCV|
+|---|---|---|---|---|---|
+|434|0\.7599999999999998|0\.8|0\.8|0\.8|0\.8|
+|563|0\.35999999999999993|0\.4|0\.4|0\.4|0\.4|
+|549|0\.5333333333333334|0\.5|0\.5|0\.5|0\.5|
+|671|0\.4000000000000001|0\.4|0\.4|0\.4|0\.4|
+|330|0\.8399999999999999|0\.8|0\.8|0\.8|0\.8|
+|670|0\.4266666666666666|0\.4|0\.4|0\.4|0\.4|
+|692|0\.32|0\.3|0\.3|0\.3|0\.3|
+|885|0\.25333333333333324|0\.2|0\.3|0\.2|0\.2|
+|660|0\.5466666666666666|0\.6|0\.5|0\.6|0\.6|
+|452|0\.6000000000000001|0\.6|0\.6|0\.6|0\.6|
+|21|0\.49333333333333323|0\.5|0\.5|0\.5|0\.5|
+|611|0\.21333333333333332|0\.2|0\.2|0\.2|0\.2|
+|658|0\.4266666666666666|0\.4|0\.4|0\.4|0\.4|
+|69|0\.013333333333333308|0\.0|0\.0|0\.0|0\.0|
+|197|0\.46666666666666673|0\.5|0\.5|0\.5|0\.5|
+|430|0\.7599999999999998|0\.8|0\.8|0\.8|0\.8|
+|307|0\.3066666666666667|0\.3|0\.3|0\.3|0\.3|
+|160|0\.5599999999999998|0\.6|0\.6|0\.6|0\.6|
+|95|0\.2|0\.2|0\.2|0\.2|0\.2|
+|790|0\.5599999999999998|0\.6|0\.6|0\.6|0\.6|
+|269|0\.4266666666666666|0\.4|0\.4|0\.4|0\.4|
+|312|0\.44|0\.4|0\.4|0\.4|0\.4|
+|441|0\.6133333333333333|0\.6|0\.6|0\.6|0\.6|
+|837|0\.2|0\.2|0\.2|0\.2|0\.2|
+|76|0\.44|0\.5|0\.4|0\.5|0\.4|
+|485|0\.4133333333333333|0\.4|0\.4|0\.4|0\.4|
+|882|0\.44|0\.4|0\.4|0\.4|0\.4|
+|96|0\.3066666666666667|0\.3|0\.3|0\.3|0\.3|
+|805|0\.4533333333333333|0\.5|0\.5|0\.5|0\.5|
+|397|0\.7466666666666666|0\.8|0\.8|0\.8|0\.8|
+|623|0\.17333333333333334|0\.2|0\.2|0\.2|0\.2|
+|340|0\.5866666666666667|0\.6|0\.6|0\.6|0\.6|
+|189|0\.3066666666666667|0\.3|0\.3|0\.3|0\.3|
+|264|0\.24000000000000005|0\.2|0\.2|0\.2|0\.2|
+|806|0\.4266666666666666|0\.4|0\.4|0\.4|0\.4|
+|714|0\.3333333333333333|0\.3|0\.3|0\.3|0\.3|
+|857|0\.1866666666666666|0\.2|0\.2|0\.2|0\.2|
+|103|0\.17333333333333334|0\.2|0\.2|0\.2|0\.2|
+|119|0\.3466666666666666|0\.3|0\.3|0\.3|0\.3|
+|665|0\.5466666666666666|0\.6|0\.5|0\.6|0\.6|
+|690|0\.37333333333333335|0\.4|0\.4|0\.4|0\.4|
+|145|0\.44|0\.4|0\.4|0\.4|0\.4|
+|277|0\.5599999999999998|0\.6|0\.6|0\.6|0\.6|
+|32|0\.21333333333333332|0\.2|0\.2|0\.2|0\.2|
+|112|0\.2|0\.2|0\.2|0\.2|0\.2|
+|258|0\.1866666666666666|0\.2|0\.2|0\.2|0\.2|
+|661|0\.5333333333333334|0\.5|0\.5|0\.5|0\.5|
+|70|0\.10666666666666669|0\.1|0\.1|0\.1|0\.1|
+|567|0\.4266666666666666|0\.4|0\.4|0\.4|0\.4|
+|81|0\.2933333333333333|0\.3|0\.3|0\.3|0\.3|
+|494|0\.37333333333333335|0\.4|0\.4|0\.4|0\.4|
+|192|0\.5333333333333334|0\.5|0\.5|0\.5|0\.5|
+|570|0\.46666666666666673|0\.5|0\.5|0\.5|0\.5|
+|693|0\.2933333333333333|0\.3|0\.3|0\.3|0\.3|
+|105|0\.09333333333333332|0\.1|0\.1|0\.1|0\.1|
+|12|0\.3466666666666666|0\.3|0\.3|0\.3|0\.3|
+|45|0\.05333333333333329|0\.1|0\.1|0\.1|0\.1|
+|819|0\.3066666666666667|0\.3|0\.3|0\.3|0\.3|
+|199|0\.32|0\.3|0\.3|0\.3|0\.3|
+|323|0\.5733333333333333|0\.6|0\.6|0\.6|0\.6|
+|774|0\.8266666666666664|0\.8|0\.8|0\.8|0\.8|
+|414|0\.9866666666666666|1\.0|1\.0|1\.0|1\.0|
+|828|0\.35999999999999993|0\.4|0\.4|0\.4|0\.4|
+|621|0\.1866666666666666|0\.2|0\.2|0\.2|0\.2|
+|545|0\.6399999999999999|0\.6|0\.6|0\.6|0\.6|
+|236|0\.17333333333333334|0\.2|0\.2|0\.2|0\.2|
+|131|0\.48000000000000004|0\.5|0\.5|0\.5|0\.5|
+|219|0\.15999999999999998|0\.2|0\.2|0\.2|0\.2|
+|294|0\.46666666666666673|0\.5|0\.5|0\.5|0\.5|
+|821|0\.35999999999999993|0\.4|0\.4|0\.4|0\.4|
+|524|0\.5466666666666666|0\.5|0\.5|0\.5|0\.5|
+|641|0\.3066666666666667|0\.3|0\.3|0\.3|0\.3|
+|240|0\.21333333333333332|0\.2|0\.2|0\.2|0\.2|
+|172|0\.35999999999999993|0\.4|0\.4|0\.4|0\.4|
+|636|0\.3066666666666667|0\.3|0\.3|0\.3|0\.3|
+|278|0\.52|0\.5|0\.5|0\.5|0\.5|
+|675|0\.4000000000000001|0\.4|0\.4|0\.4|0\.4|
+|473|0\.52|0\.5|0\.5|0\.5|0\.5|
+|697|0\.35999999999999993|0\.4|0\.4|0\.4|0\.4|
+|74|0\.5333333333333334|0\.5|0\.5|0\.5|0\.5|
+|490|0\.37333333333333335|0\.4|0\.4|0\.4|0\.4|
+|207|0\.3066666666666667|0\.3|0\.3|0\.3|0\.3|
+|232|0\.10666666666666669|0\.1|0\.1|0\.1|0\.1|
+|262|0\.11999999999999994|0\.1|0\.1|0\.1|0\.1|
+|686|0\.4000000000000001|0\.4|0\.4|0\.4|0\.4|
+|210|0\.27999999999999997|0\.3|0\.3|0\.3|0\.3|
+|223|0\.15999999999999998|0\.2|0\.2|0\.2|0\.2|
+|579|0\.4000000000000001|0\.4|0\.4|0\.4|0\.4|
+|377|0\.48000000000000004|0\.5|0\.5|0\.5|0\.5|
+|359|0\.48000000000000004|0\.5|0\.5|0\.5|0\.5|
+|22|0\.44|0\.4|0\.4|0\.4|0\.4|
+|633|0\.15999999999999998|0\.2|0\.2|0\.2|0\.2|
+|8|0\.1333333333333333|0\.1|0\.1|0\.1|0\.1|
+|662|0\.5066666666666666|0\.5|0\.5|0\.5|0\.5|
+|713|0\.3066666666666667|0\.3|0\.3|0\.3|0\.3|
+|552|0\.6533333333333333|0\.7|0\.7|0\.7|0\.7|
+|244|0\.06666666666666665|0\.1|0\.1|0\.1|0\.1|
+|832|0\.22666666666666663|0\.2|0\.2|0\.2|0\.2|
+|553|0\.6266666666666667|0\.6|0\.6|0\.6|0\.6|
+|79|0\.4000000000000001|0\.4|0\.4|0\.4|0\.4|
+|865|0\.1866666666666666|0\.2|0\.2|0\.2|0\.2|
+|196|0\.32|0\.3|0\.3|0\.3|0\.3|
+|835|0\.27999999999999997|0\.3|0\.3|0\.3|0\.3|
+|719|0\.32|0\.3|0\.3|0\.3|0\.3|
+|647|0\.4000000000000001|0\.4|0\.4|0\.4|0\.4|
+|154|0\.4266666666666666|0\.4|0\.4|0\.4|0\.4|
+|309|0\.24000000000000005|0\.2|0\.2|0\.2|0\.2|
+|147|0\.37333333333333335|0\.4|0\.4|0\.4|0\.4|
+|246|0\.21333333333333332|0\.2|0\.2|0\.2|0\.2|
+|118|0\.2933333333333333|0\.3|0\.3|0\.3|0\.3|
+|618|0\.27999999999999997|0\.3|0\.3|0\.3|0\.3|
+|276|0\.5599999999999998|0\.6|0\.6|0\.6|0\.6|
+|285|0\.4000000000000001|0\.4|0\.4|0\.4|0\.4|
+|829|0\.3333333333333333|0\.3|0\.3|0\.3|0\.3|
+|365|0\.5066666666666666|0\.5|0\.5|0\.5|0\.5|
+|313|0\.4533333333333333|0\.5|0\.5|0\.4|0\.5|
+|834|0\.2933333333333333|0\.3|0\.3|0\.3|0\.3|
+|879|0\.44|0\.4|0\.5|0\.4|0\.4|
+|195|0\.38666666666666666|0\.4|0\.4|0\.4|0\.4|
+|52|0\.06666666666666665|0\.1|0\.1|0\.1|0\.1|
+
+Dalam tabel yang diberikan, terdapat beberapa model yang digunakan untuk melakukan prediksi. Berikut adalah penjelasan mengenai masing-masing model:
+
+* LassoCV: Model LassoCV merupakan model regresi linear dengan regularisasi L1 (Lasso) yang dikombinasikan dengan teknik validasi silang (cross-validation). Model ini digunakan untuk melakukan prediksi pada kolom "prediksi_LassoCV". Nilai-nilai yang tercantum dalam kolom tersebut adalah hasil prediksi yang diberikan oleh model LassoCV.
+
+* NuSVR: Model NuSVR merupakan model Support Vector Regression (SVR) dengan parameter kernel Nu yang digunakan untuk melakukan prediksi. Model ini digunakan untuk prediksi pada kolom "prediksi_NuSVR". Nilai-nilai dalam kolom tersebut adalah hasil prediksi yang diberikan oleh model NuSVR.
+
+* ElasticNetCV: Model ElasticNetCV adalah model regresi linear yang menggabungkan regularisasi L1 (Lasso) dan regularisasi L2 (Ridge) dengan teknik validasi silang. Model ini digunakan untuk prediksi pada kolom "prediksi_ElasticNetCV". Nilai-nilai dalam kolom tersebut adalah hasil prediksi yang diberikan oleh model ElasticNetCV.
+
+* LassoLarsCV: Model LassoLarsCV merupakan model regresi Lasso dengan teknik validasi silang menggunakan metode Least Angle Regression (LARS). Model ini digunakan untuk prediksi pada kolom "prediksi_LassoLarsCV". Nilai-nilai dalam kolom tersebut adalah hasil prediksi yang diberikan oleh model LassoLarsCV.
+
+Dengan menggunakan model-model di atas, tabel menyajikan hasil prediksi dari masing-masing model untuk setiap sampel atau contoh yang terdaftar dalam tabel. Dengan melihat nilai-nilai prediksi dari setiap model, Anda dapat membandingkan kinerja dan keakuratan model-model tersebut dalam melakukan prediksi terhadap nilai aktual yang tercantum dalam kolom "y_true".
+
+kolom "y_true" mengacu pada nilai aktual atau nilai sebenarnya dari variabel yang sedang diprediksi. Dalam konteks ini, "y_true" mewakili nilai target yang sebenarnya atau nilai yang ingin diprediksi oleh model-model tersebut.
+
+Di mana kita menggunakan model - model tersebut untuk memprediksi standart jumlah tingkat pengangguran maka "y_true" akan berisi jumlah tingkat pengangguran sebenarnya dari dalam dataset. Nilai-nilai yang tercantum dalam kolom "y_true" merupakan referensi atau titik pembanding untuk mengevaluasi sejauh mana prediksi dari setiap model mendekati nilai sebenarnya.
+
+Dengan membandingkan nilai prediksi dari masing-masing model dengan nilai "y_true", Kita dapat mengukur kinerja dan akurasi model dalam melakukan prediksi. Semakin mendekati nilai "y_true", semakin akurat prediksi model.
+
+Setelah melalui berbagai tahapan evaluasi diputuskan bahwa model terbaik yang akan digunakan adalah LassoCV sesuai dengan perhitungan matrix yang telah dijabarkan diatas. Berikut hasil akhir dari 4 Model terbaik.
+
+Tabel 5. _Final Result of Model_
 |index|Model\_Name|mse|r2|rmse|
 |---|---|---|---|---|
 |0|LassoCV|5\.7576947625830465e-05|0\.9982615994842791|0\.007587947523924402|
