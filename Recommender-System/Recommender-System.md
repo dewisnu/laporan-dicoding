@@ -12,6 +12,12 @@ Sistem rekomendasi sendiri telah digunakan secara luas dalam hampir semua area b
 
 
 
+
+
+
+
+
+
 ## Daftar Refrensi
 
 [1] O. D. Maharani, “Minat Baca Anak-Anak di Kampoeng Baca Kabupaten jember,” *Jurnal Review Pendidikan Dasar : Jurnal Kajian Pendidikan dan Hasil Penelitian*, vol. 3, no. 1, p. 320, 2017. doi:10.26740/jrpd.v3n1.p320-328 
