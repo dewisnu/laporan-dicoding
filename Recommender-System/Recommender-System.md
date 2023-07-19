@@ -27,13 +27,80 @@ Semua poin di atas harus diuraikan dengan jelas. Anda bebas menuliskan berapa pe
 Solusi yang saya ajukan yaitu dengan menggunakan 2 algoritma machine learning untuk sistem rekomendasi yaitu:
 
 - _Content Based Filtering_  adalah algoritma yang merekomendasikan item serupa dengan apa yang disukai pengguna, berdasarkan tindakan mereka sebelumnya atau umpan balik eksplisit. Algoritma ini memberikan rekomendasi berdasarkan aktivitas pada masa lalu[3].
-- _Collaborative Filtering_  adalah algoritma yang bergantung pada pendapat komunitas pengguna. Dia tidak memerlukan atribut untuk setiap itemnya. Algoritma ini memberikan rekomendasi berdasarkan nilai rating atau nilai lain, disini saya menggunakan target sebagai dasar penilaian.
+- _Collaborative Filtering_  adalah algoritma yang bergantung pada pendapat komunitas pengguna. Dia tidak memerlukan atribut untuk setiap itemnya. Algoritma ini memberikan rekomendasi berdasarkan nilai rating atau nilai lain, disini saya menggunakan target sebagai dasar penilaian[3].
 
 ## Data Understanding
 
 Data atau datasets yang digunakan pada proyek <em> Machine Learning </em> ini adalah data _Book Recommendation Dataset_ yang bisa di akses di [link berikut ini (kaggle)](https://www.kaggle.com/datasets/arashnic/book-recommendation-dataset?select=Books.csv).
 
+Variabel-variabel yang terdapat pada dataset adalah sebagai berikut:
 
+#### Book.csv 
+
+```
+ISBN: Book ISBN
+Book-Title: Book Title
+Book-Author: Book Author
+Year-Of-Publication: year of publication
+Publisher: publisher of the book
+Image-URL-S:small image of the book , amazon link
+Image-URL-M:medium size image of the book , amazon link
+Image-URL-L:large image size of the book , amazon link
+```
+
+#### Rating.csv
+
+```
+User-ID: Unique user id
+ISBN: Book ISBN
+Book-Rating: rating of book
+```
+
+#### Users.csv
+
+```
+User-ID: Unique user id
+Location: location of the user
+Age: User Age
+```
+
+#### recsys_taxonomy2.PNG (We not use this file)
+
+
+
+### EDA
+
+Pada Gambar 1 meperlihatkan kebayanyakan User membaca buku dari Publisher Ballantine Books
+
+![column Publisher graph chart](https://github.com/dewisnu/laporan-dicoding/assets/63925882/d0057e08-6fe4-478d-98f9-f6835c1f428c)
+
+Gambar 1. Kontribusi Variabel untuk column _Publisher_
+
+
+
+Pada Gambar 2 meperlihatkan bahwa kebanyakan User lebih banyak membaca buku _Wild Animus_ bisa kita liat juga beberapa value cukup balance
+
+![Column Book-Title Graph Chart](https://github.com/dewisnu/laporan-dicoding/assets/63925882/321dc2f7-caf3-480d-9a65-f4f5b94f44bc)
+
+Gambar 2. Kontribusi Variabel untuk column _Book-Title_
+
+
+
+Pada Gambar 3 meperlihatkan bahwa kebanyakan User lebih banyak membaca buku dari _Author_ Stephen King
+
+![columns Book-Author graph chart](https://github.com/dewisnu/laporan-dicoding/assets/63925882/31569b3a-f77d-4c82-adee-77b011514bcc)
+
+Gambar 3.Kontribusi Variabel untuk column _Book-Author_
+
+
+
+Pada Gambar 4  meperlihatkan bahwa kebanyakan User yang mebace buku ada di rentang usia 33 tahun
+
+![column Age graph chart](https://github.com/dewisnu/laporan-dicoding/assets/63925882/a0f6d67a-47e6-45b1-9e5d-72bf4ac0a56c)
+
+Gambar 4. Kontribusi Variabel untuk column _Age_
+
+## Data Preparation
 
 
 
