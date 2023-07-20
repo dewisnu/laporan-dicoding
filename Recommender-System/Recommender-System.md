@@ -70,25 +70,27 @@ Age: User Age
 
 ### EDA
 
-Pada Gambar 1 meperlihatkan kebayanyakan User membaca buku dari Publisher Ballantine Books
+Pada Gambar 1 meperlihatkan kebayanyakan User membaca buku dari Publisher Harlequin
 
-![column Publisher graph chart](https://github.com/dewisnu/laporan-dicoding/assets/63925882/d0057e08-6fe4-478d-98f9-f6835c1f428c)
+![column Publisher graph chart](https://github.com/dewisnu/laporan-dicoding/assets/63925882/cfe3977b-3557-402c-9dc5-68f686401b68)
+
+
 
 Gambar 1. Kontribusi Variabel untuk column _Publisher_
 
 
 
-Pada Gambar 2 meperlihatkan bahwa kebanyakan User lebih banyak membaca buku _Wild Animus_ bisa kita liat juga beberapa value cukup balance
+Pada Gambar 2 meperlihatkan bahwa kebanyakan User lebih banyak membaca buku _Little Women_ bisa kita liat juga beberapa value cukup balance
 
-![Column Book-Title Graph Chart](https://github.com/dewisnu/laporan-dicoding/assets/63925882/321dc2f7-caf3-480d-9a65-f4f5b94f44bc)
+![Column Book-Title Graph Chart](https://github.com/dewisnu/laporan-dicoding/assets/63925882/46435481-97c3-448f-b775-93ce430f4138)
 
 Gambar 2. Kontribusi Variabel untuk column _Book-Title_
 
 
 
-Pada Gambar 3 meperlihatkan bahwa kebanyakan User lebih banyak membaca buku dari _Author_ Stephen King
+Pada Gambar 3 meperlihatkan bahwa kebanyakan User lebih banyak membaca buku dari _Agatha Christie_
 
-![columns Book-Author graph chart](https://github.com/dewisnu/laporan-dicoding/assets/63925882/31569b3a-f77d-4c82-adee-77b011514bcc)
+![columns Book-Author graph chart](https://github.com/dewisnu/laporan-dicoding/assets/63925882/6fdd4298-7c53-492b-beca-af8c8a1790b9)
 
 Gambar 3.Kontribusi Variabel untuk column _Book-Author_
 
@@ -96,9 +98,11 @@ Gambar 3.Kontribusi Variabel untuk column _Book-Author_
 
 Pada Gambar 4  meperlihatkan bahwa kebanyakan User yang mebace buku ada di rentang usia 33 tahun
 
-![column Age graph chart](https://github.com/dewisnu/laporan-dicoding/assets/63925882/a0f6d67a-47e6-45b1-9e5d-72bf4ac0a56c)
+![column Age graph chart](https://github.com/dewisnu/laporan-dicoding/assets/63925882/a4e8b772-c41f-437c-aa09-355bbf8fc977)
 
 Gambar 4. Kontribusi Variabel untuk column _Age_
+
+
 
 ## Data Preparation
 
