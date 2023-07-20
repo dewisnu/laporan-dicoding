@@ -106,6 +106,53 @@ Gambar 4. Kontribusi Variabel untuk column _Age_
 
 ## Data Preparation
 
+### Merge Datasets for Gather Information
+
+Untuk tahap awal saya menggabungkan beberapa data untuk tahap awal analisis. Berikut datanya, ini merupakan gabugan dari Books.csv, Ratings.csv dan Users.csv
+
+
+
+Tabel 1. *Merger Data* 
+
+|   NO |       ISBN |          Book-Title |          Book-Author | Year-Of-Publication |               Publisher |                                       Image-URL-S |                                       Image-URL-M |                                       Image-URL-L | User-ID | Book-Rating |                  Location |  Age |
+| ---: | ---------: | ------------------: | -------------------: | ------------------: | ----------------------: | ------------------------------------------------: | ------------------------------------------------: | ------------------------------------------------: | ------: | ----------: | ------------------------: | ---: |
+|    0 | 0195153448 | Classical Mythology |   Mark P. O. Morford |                2002 | Oxford University Press | http://images.amazon.com/images/P/0195153448.0... | http://images.amazon.com/images/P/0195153448.0... | http://images.amazon.com/images/P/0195153448.0... |     2.0 |         0.0 | stockton, california, usa | 18.0 |
+|    1 | 0002005018 |        Clara Callan | Richard Bruce Wright |                2001 |   HarperFlamingo Canada | http://images.amazon.com/images/P/0002005018.0... | http://images.amazon.com/images/P/0002005018.0... | http://images.amazon.com/images/P/0002005018.0... |     8.0 |         5.0 |  timmins, ontario, canada |  NaN |
+|    2 | 0002005018 |        Clara Callan | Richard Bruce Wright |                2001 |   HarperFlamingo Canada | http://images.amazon.com/images/P/0002005018.0... | http://images.amazon.com/images/P/0002005018.0... | http://images.amazon.com/images/P/0002005018.0... | 11400.0 |         0.0 |   ottawa, ontario, canada | 49.0 |
+|    3 | 0002005018 |        Clara Callan | Richard Bruce Wright |                2001 |   HarperFlamingo Canada | http://images.amazon.com/images/P/0002005018.0... | http://images.amazon.com/images/P/0002005018.0... | http://images.amazon.com/images/P/0002005018.0... | 11676.0 |         8.0 |             n/a, n/a, n/a |  NaN |
+|    4 | 0002005018 |        Clara Callan | Richard Bruce Wright |                2001 |   HarperFlamingo Canada | http://images.amazon.com/images/P/0002005018.0... | http://images.amazon.com/images/P/0002005018.0... | http://images.amazon.com/images/P/0002005018.0... | 41385.0 |         0.0 |  sudbury, ontario, canada |  NaN |
+
+Bisa dipahami banyak sekali fitur yang bisa digunakan, tetapi nantinya akan kita *drop* di langkah berikutnya, kita tidak akan menggunakan semua fitur nya.
+
+### Handling Null Values
+
+Handling null values yang saya gunakan yaitu dengan drop.
+
+Tabel 2. *Summary of Null Values Every Each Column*
+
+|       Column        | Data Type | Unique Values | Null Values | % null Values |
+| :-----------------: | :-------: | :-----------: | :---------: | :-----------: |
+|         Age         |  float64  |      141      |   279044    |   0.270301    |
+|       User-ID       |  float64  |     92106     |    1209     |   0.001171    |
+|     Book-Rating     |  float64  |      11       |    1209     |   0.001171    |
+|      Location       |  object   |     22480     |    1209     |   0.001171    |
+|     Image-URL-L     |  object   |    271041     |      4      |   0.000004    |
+|      Publisher      |  object   |     16807     |      2      |   0.000002    |
+|     Book-Author     |  object   |    102023     |      1      |   0.000001    |
+|        ISBN         |  object   |    271360     |      0      |   0.000000    |
+|     Book-Title      |  object   |    242135     |      0      |   0.000000    |
+| Year-Of-Publication |  object   |      202      |      0      |   0.000000    |
+|     Image-URL-S     |  object   |    271044     |      0      |   0.000000    |
+|     Image-URL-M     |  object   |    271044     |      0      |   0.000000    |
+
+Dapat dilihat dari data diatas sangat banyak sekali null values, maka dari itu saya akan drop data data yang null ? kenapa drop?, data ada sekitar 300 ribuan data null .
+
+Setelah di drop total data ada sekitar 753 ribu  data.
+
+### Filter Column
+
+
+
 
 
 ## Daftar Refrensi
