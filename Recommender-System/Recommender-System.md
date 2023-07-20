@@ -151,11 +151,45 @@ Setelah di drop total data ada sekitar 753 ribu  data.
 
 ### Filter Column
 
+Kita akan memilih column mana saja yang menuru hasil analisis EDA dan menurut pandangan kita sebagai seorang engineer yang dapat mempengaruhi kinerja model
+
+berikut kolom yang saya pilih
+
+*['ISBN','Book-Title','Book-Author','Publisher','Book-Rating','User-ID','Age',]*
+
+### Bad Value
+
+Saya menyadari banyak sekali value kategorikal yang berbanding jauh dengan yang lainnya misalnya Publisher, ada Publisher yang hanya memiliki 1 value sedangkan Publisher lainnya diatas 100. Maka dari itu saya akan drop value yang jumlah nya kurang dari 100
+
+### Correlation
+
+![Corelation Matrix](https://github.com/dewisnu/laporan-dicoding/assets/63925882/7de7e544-d19e-422c-a5ce-ccf60ea29d31)
+
+Gambar 6. <em>Correlation Matrix</em>
+
+Correlation ini merupakan sebuah teknik atau metode untuk melihat keterkaitan, korelasi, hubungan antara <em>feature</em> dengan <em>feature</em> lainnya.
+
+Disini kita akan menganalisis keterkaiatan <em>feature</em> terhadap kolom target, ada beberapa <em>feature</em> yang sangat kecil korelasi nya terhadap target, tetapi jika feature tersebut di drop akan sangat berpengaruh terhadap feature lainnya.
+
+###  ###  Label Encoder
+
+<em>Label Encoder</em> merupakan step di <em>Machine Learning </em> yang sangat krusial / wajib dilakukan, label encoder ini berfungsi untuk mengubah data kategorikal menjadi bentuk angka, seperti yang kita pelajari dulu bahwa inputan <em>Machine Learning </em> itu harus angka / numeric, maka dari itu kita perlu mengkonversi nya terlebih dahulu
+
+#### Encoding
+
+Sebenarnya ini step digunakan pada saat membuat <em>Collaborative Filtering</em>, tapi step nya hampir sama dengan <em>label encoder</em>, hanya saja di <em>encoding</em> ini ada beberapa step yang memang berguna nanti untuk testing / memprediksi data baru.
+
+### Train Test Split
+
+Saya disini menggunakan rasio 8:2, yaitu 80% untuk train dan 20% untuk validation.
+
+Kita Perlu membagi datasets ke dalam train dan validasi, data train sendiri berfungsi untuk melatih model, data validasi berfungsi untuk memvalidasi model diluar data train, data validasi ini berfungsi untuk memberitahu model bahwa model yang sedang dibuat masih belum cukup baik dalam memprediksi data baru. Data validasi ini biasa digunakan dalam <em> callback </em> untuk mempercepat waktu <em> training </em> karena kita akan memonitor <em> val_loss </em>
+
+## Modeling
 
 
 
-
-## Daftar Refrensi
+###  Daftar Refrensi
 
 [1] O. D. Maharani, “Minat Baca Anak-Anak di Kampoeng Baca Kabupaten jember,” *Jurnal Review Pendidikan Dasar : Jurnal Kajian Pendidikan dan Hasil Penelitian*, vol. 3, no. 1, p. 320, 2017. doi:10.26740/jrpd.v3n1.p320-328 
 
