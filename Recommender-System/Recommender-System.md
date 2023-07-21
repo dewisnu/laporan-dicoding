@@ -25,7 +25,7 @@ Sistem rekomendasi sendiri telah digunakan secara luas dalam hampir semua area b
 Solusi yang diajukan yaitu dengan menggunakan 2 algoritma machine learning untuk sistem rekomendasi yaitu:
 
 - _Content Based Filtering_  adalah algoritma yang merekomendasikan item serupa dengan apa yang disukai pengguna, berdasarkan tindakan mereka sebelumnya atau umpan balik eksplisit. Algoritma ini memberikan rekomendasi berdasarkan aktivitas pada masa lalu[3].
-- _Collaborative Filtering_  adalah algoritma yang bergantung pada pendapat komunitas pengguna. Dia tidak memerlukan atribut untuk setiap itemnya. Algoritma ini memberikan rekomendasi berdasarkan nilai rating atau nilai lain, disini saya menggunakan target sebagai dasar penilaian[3].
+- _Collaborative Filtering_  adalah algoritma yang bergantung pada pendapat komunitas pengguna. Dia tidak memerlukan atribut untuk setiap itemnya. Algoritma ini memberikan rekomendasi berdasarkan nilai rating atau nilai lain[3].
 
 ## Data Understanding
 
@@ -106,11 +106,11 @@ Gambar 4. Kontribusi Variabel untuk column _Age_
 
 ### Merge Datasets for Gather Information
 
-Untuk tahap awal saya menggabungkan beberapa data untuk tahap awal analisis. Berikut datanya, ini merupakan gabugan dari Books.csv, Ratings.csv dan Users.csv
+Untuk tahap awal , menggabungkan beberapa data untuk tahap awal analisis. Berikut datanya, ini merupakan gabugan dari Books.csv, Ratings.csv dan Users.csv
 
 
 
-Tabel 1. *Merger Data* 
+Tabel 1. *Merger Data* f
 
 |   NO |       ISBN |          Book-Title |          Book-Author | Year-Of-Publication |               Publisher |                                       Image-URL-S |                                       Image-URL-M |                                       Image-URL-L | User-ID | Book-Rating |                  Location |  Age |
 | ---: | ---------: | ------------------: | -------------------: | ------------------: | ----------------------: | ------------------------------------------------: | ------------------------------------------------: | ------------------------------------------------: | ------: | ----------: | ------------------------: | ---: |
@@ -124,7 +124,7 @@ Bisa dipahami banyak sekali fitur yang bisa digunakan, tetapi nantinya akan kita
 
 ### Handling Null Values
 
-Handling null values yang saya gunakan yaitu dengan drop.
+Handling null values  yaitu dengan drop.
 
 Tabel 2. *Summary of Null Values Every Each Column*
 
@@ -143,7 +143,7 @@ Tabel 2. *Summary of Null Values Every Each Column*
 |     Image-URL-S     |  object   |    271044     |      0      |   0.000000    |
 |     Image-URL-M     |  object   |    271044     |      0      |   0.000000    |
 
-Dapat dilihat dari data diatas sangat banyak sekali null values, maka dari itu saya akan drop data data yang null ? kenapa drop?, data ada sekitar 300 ribuan data null .
+Dapat dilihat dari data diatas sangat banyak sekali null values, maka dari itu akan drop data data yang null ? kenapa drop?, data ada sekitar 300 ribuan data null .
 
 Setelah di drop total data ada sekitar 753 ribu  data.
 
@@ -151,13 +151,13 @@ Setelah di drop total data ada sekitar 753 ribu  data.
 
 Kita akan memilih column mana saja yang menuru hasil analisis EDA dan menurut pandangan kita sebagai seorang engineer yang dapat mempengaruhi kinerja model
 
-berikut kolom yang saya pilih
+berikut kolom yang dipilih
 
 *['ISBN','Book-Title','Book-Author','Publisher','Book-Rating','User-ID','Age',]*
 
 ### Bad Value
 
-Saya menyadari banyak sekali value kategorikal yang berbanding jauh dengan yang lainnya misalnya Publisher, ada Publisher yang hanya memiliki 1 value sedangkan Publisher lainnya diatas 100. Maka dari itu saya akan drop value yang jumlah nya kurang dari 100
+Bisa dilihat banyak sekali value kategorikal yang berbanding jauh dengan yang lainnya misalnya Publisher, ada Publisher yang hanya memiliki 1 value sedangkan Publisher lainnya diatas 100. Maka dari itu  akan dilakukan drop value yang jumlah nya kurang dari 100
 
 ### Correlation
 
@@ -179,7 +179,7 @@ Sebenarnya ini step digunakan pada saat membuat <em>Collaborative Filtering</em>
 
 ### Train Test Split
 
-Saya disini menggunakan rasio 8:2, yaitu 80% untuk train dan 20% untuk validation.
+ menggunakan rasio 8:2, yaitu 80% untuk train dan 20% untuk validation.
 
 Kita Perlu membagi datasets ke dalam train dan validasi, data train sendiri berfungsi untuk melatih model, data validasi berfungsi untuk memvalidasi model diluar data train, data validasi ini berfungsi untuk memberitahu model bahwa model yang sedang dibuat masih belum cukup baik dalam memprediksi data baru. Data validasi ini biasa digunakan dalam <em> callback </em> untuk mempercepat waktu <em> training </em> karena kita akan memonitor <em> val_loss </em>
 
@@ -217,9 +217,9 @@ Kita Perlu membagi datasets ke dalam train dan validasi, data train sendiri berf
 
 * Metode Colaborative Filtering
 
-  Metode Colaborative filtering merupakan metode yang melakukan proses penyaringan item yang berdasarkan pengguna lain, dengan cara memberikan informasi kepada pengguna berdasarkan kemiripan karakteristik. Dalam pembuatanya saya menggunakan RecommenderNet, pada tahap ini model menghitung skor kecocokan antara pengguna dan buku dengan teknik embedding. Pertama, kita melakukan proses embedding terhadap data user dan buku. Selanjutnya, lakukan operasi perkalian dot product antara embedding user dan buku. Selain itu, kita juga dapat menambahkan bias untuk setiap user dan buku. Skor kecocokan ditetapkan dalam skala [0,1] dengan fungsi aktivasi sigmoid. Metode ini menggunakan Binary Crossentropy untuk menghitung loss function, Adam (Adaptive Moment Estimation) sebagai optimizer, dan root mean squared error (RMSE) sebagai metrics evaluation. [3]
+  Metode Colaborative filtering merupakan metode yang melakukan proses penyaringan item yang berdasarkan pengguna lain, dengan cara memberikan informasi kepada pengguna berdasarkan kemiripan karakteristik. Dalam pembuatanya menggunakan RecommenderNet, pada tahap ini model menghitung skor kecocokan antara pengguna dan buku dengan teknik embedding. Pertama, kita melakukan proses embedding terhadap data user dan buku. Selanjutnya, lakukan operasi perkalian dot product antara embedding user dan buku. Selain itu, kita juga dapat menambahkan bias untuk setiap user dan buku. Skor kecocokan ditetapkan dalam skala [0,1] dengan fungsi aktivasi sigmoid. Metode ini menggunakan Binary Crossentropy untuk menghitung loss function, Adam (Adaptive Moment Estimation) sebagai optimizer, dan root mean squared error (RMSE) sebagai metrics evaluation. [3]
 
-  - Data yang digunakan pada metode ini adalah data yang berupa nilai, biasanya rating. Disini saya meenggunakan kolom _Book-Rating_
+  - Data yang digunakan pada metode ini adalah data yang berupa nilai, biasanya rating. Pada bagian ini menggunakan kolom _Book-Rating_
 
   - Top N Recommendation yang dihasilkan sebagai berikut.
 
@@ -253,11 +253,11 @@ Kita Perlu membagi datasets ke dalam train dan validasi, data train sendiri berf
 
 ## Evaluation
 
-Untuk Content Base Filtering saya saya akan menghitung precision nya dengan rumus berikut.
+Untuk Content Base Filtering disini  akan menghitung precision nya dengan rumus berikut.
 
 recommender system precision = p $ \text {of recommendations that are relevants} \over \text{of items we recommended} $
 
-Untuk cara menghitung nya disini saya meminta rekomendasi Buku untuk Publisher 370
+Untuk cara menghitung nya disini di inputkan rekomendasi Buku untuk Publisher 370
 
 Bisa dilihat di tabel 3 ada 1 dari 6 rekomendasi diberikan yang sesuai artinya kita hitung precision nya dengan cara
 
@@ -265,7 +265,7 @@ p = $1 \over 6$
 
 p = 16,6%
 
-Selanjutnya adalah untuk Model Colaborative Filtering karena model yang digunakan adalah model regressi, maka saya akan menggunakan metric untuk evaluasi, berikut adalah metric nya:
+Selanjutnya adalah untuk Model Colaborative Filtering karena model yang digunakan adalah model regressi, maka  akan menggunakan metric untuk evaluasi, berikut adalah metric nya:
 
 ### Root Mean Squared Error (RMSE)
 
@@ -289,7 +289,7 @@ Hasil Graph Evaluasi
 
 Gambar 7. <em>Loss Train and Test Model Metrics </em>
 
-Dapat disimpulkan model ini sedikit overfit, seperti yang kita lihat jika dengan data <em> train rmse </em> , tetapi jika dengan data validasi sebaliknya. Ini disebabkan karena sedikit nya improvisasi <em> datasets </em>, dikarenakan keterbatasan komputasi saya hanya bisa memasukan max 100.000 <em>row</em> dalam <em> datasets </em> saja, jika lebih maka akan <em>out of memory</em>.
+Dapat disimpulkan model ini sedikit overfit, seperti yang kita lihat jika dengan data <em> train rmse </em> , tetapi jika dengan data validasi sebaliknya. Ini disebabkan karena sedikit nya improvisasi <em> datasets </em>, dikarenakan keterbatasan komputasi  hanya bisa memasukan max 100.000 <em>row</em> dalam <em> datasets </em> saja, jika lebih maka akan <em>out of memory</em>.
 
 ## Kesimpulan
 
