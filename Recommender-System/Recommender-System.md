@@ -187,6 +187,74 @@ Kita Perlu membagi datasets ke dalam train dan validasi, data train sendiri berf
 
 ## Modeling
 
+* Metode Content Based Filtering
+
+  Content based filtering menggunakan informasi tentang beberapa item/data untuk merekomendasikan kepada pengguna sebagai referensi mengenai informasi yang digunakan sebelumnya. Tujuan dari content based filtering adalah untuk memprediksi persamaan sejumlah informasi yang didapat dari pengguna. Sebagai contoh, seorang pendengar musik sedang mendengar musik bergenre reggae. Platform musik online secara sistem akan merekomendasikan si pengguna untuk mendengarkan musik lain yang berhubungan dengan reggae. Dalam pembuatannya, content based filtering menggunakan konsep perhitungan Cosine Similarity yang intinya mengukur kesamaan antara dua vektor dan menentukan apakah kedua vektor tersebut menunjuk ke arah yang sama.
+
+  Cosine similarity mengukur kesamaan antara dua vektor dan menentukan apakah kedua vektor tersebut menunjuk ke arah yang sama. Ia menghitung sudut cosinus antara dua vektor. Semakin kecil sudut cosinus, semakin besar nilai cosine similarity.
+
+  Berikut rumus dari Cosine Similarity
+
+  cosine similarity = $\sum_{i=1}^n * A_i B_i \over \sum_{i=1}^n * A_i^2 * \sum_{i=1}^n * B_i^2$
+
+          Dik :
+      
+          A : Product Item 1
+          B : Product Item 2
+
+- Data yang digunakan pada metode ini adalah data yang disukai oleh pengguna pada masa lalu. Rekomendasi yang dihasilkan merupakan rekomendasi yang berdasarkan data pengguna tersebut di masa lalu.
+
+  - Hasil top N Recommendation terhadap Publisher 370 <code>recommend_books_to_you(df, '370', '40')</code> dan hasil Top N Recommendation nya
+
+    Tabel 3. <em>Top N Recommendation</em>
+
+    |   NO | ISBN_le | Similar with Publisher id 370 |                                Book-Author_le |  Age |                                     Book-Title_le |
+    | ---: | ------: | ----------------------------: | --------------------------------------------: | ---: | ------------------------------------------------: |
+    |    1 |   18248 |                           370 |                        ART OF MANAGING PEOPLE | 40.0 |                                    Jazz Anecdotes |
+    |    2 |    7907 |                           231 | A Man and His Mother: An Adopted Son's Search | 46.0 |             Meditations for Women Who Do Too Much |
+    |    3 |   76592 |                            50 |                              Franny and Zooey | 33.0 | Spider Woman's Granddaughters: Traditional Tal... |
+    |    4 |    2782 |                           231 |                    A wild old man on the road | 40.0 |                               The Late Night Muse |
+    |    5 |   28945 |                           373 |                            Grab Hands and Run | 46.0 |                       De Fun Dont Done Les Norton |
+    |    6 |  156920 |                           280 |          Escape Me Never (Harlequin Presents) | 54.0 |                The Episode of the Wandering Knife |
+
+* Metode Colaborative Filtering
+
+  Metode Colaborative filtering merupakan metode yang melakukan proses penyaringan item yang berdasarkan pengguna lain, dengan cara memberikan informasi kepada pengguna berdasarkan kemiripan karakteristik. Dalam pembuatanya saya menggunakan RecommenderNet, pada tahap ini model menghitung skor kecocokan antara pengguna dan buku dengan teknik embedding. Pertama, kita melakukan proses embedding terhadap data user dan buku. Selanjutnya, lakukan operasi perkalian dot product antara embedding user dan buku. Selain itu, kita juga dapat menambahkan bias untuk setiap user dan buku. Skor kecocokan ditetapkan dalam skala [0,1] dengan fungsi aktivasi sigmoid. Metode ini menggunakan Binary Crossentropy untuk menghitung loss function, Adam (Adaptive Moment Estimation) sebagai optimizer, dan root mean squared error (RMSE) sebagai metrics evaluation. [3]
+
+  - Data yang digunakan pada metode ini adalah data yang berupa nilai, biasanya rating. Disini saya meenggunakan kolom _Book-Rating_
+
+  - Top N Recommendation yang dihasilkan sebagai berikut.
+
+    ```
+    Showing recommendations for users: 252848.0
+    ===========================
+    book with high ratings from user
+    --------------------------------
+    971246                     The Rolling Stone Book of Comedy
+    101744                                    WLD ACCORDNG GARP
+    620005    Writer's Market 2000: 8,000 Editors Who Buy Wh...
+    303744                                          Beach Music
+    551332     The Grass Is Always Greener Over the Septic Tank
+    Name: Book-Title, dtype: object
+    --------------------------------
+    Top 10 book recommendation
+    --------------------------------
+    Wizard and Glass (The Dark Tower, Book 4)
+    Wizard and Glass (The Dark Tower, Book 4)
+    Slow Hand: Women Writing Erotica
+    The Seven Dials Mystery (St. Martin's Minotaur Mysteries)
+    Wizard and Glass (The Dark Tower, Book 4)
+    Wizard and Glass (The Dark Tower, Book 4)
+    The Devil in Bellminster: An Unlikely Mystery (Unlikely Heroes)
+    Vintage Affair (Harlequin Romance, No 3158)
+    The Seven Dials Mystery (St. Martin's Minotaur Mysteries)
+    Wizard and Glass (The Dark Tower, Book 4)
+    ```
+
+
+
+## Evaluation
+
 
 
 ###  Daftar Refrensi
