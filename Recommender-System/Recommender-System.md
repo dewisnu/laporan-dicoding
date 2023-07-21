@@ -255,7 +255,47 @@ Kita Perlu membagi datasets ke dalam train dan validasi, data train sendiri berf
 
 ## Evaluation
 
+Untuk Content Base Filtering saya saya akan menghitung precision nya dengan rumus berikut.
 
+recommender system precision = p $ \text {of recommendations that are relevants} \over \text{of items we recommended} $
+
+Untuk cara menghitung nya disini saya meminta rekomendasi Buku untuk Publisher 370
+
+Bisa dilihat di tabel 3 ada 1 dari 6 rekomendasi diberikan yang sesuai artinya kita hitung precision nya dengan cara
+
+p = $1 \over 6$
+
+p = 16,6%
+
+Selanjutnya adalah untuk Model Colaborative Filtering karena model yang digunakan adalah model regressi, maka saya akan menggunakan metric untuk evaluasi, berikut adalah metric nya:
+
+### Root Mean Squared Error (RMSE)
+
+<em>Root Mean Squared Error (RMSE)</em> merupakan salah satu cara untuk mengevaluasi model regresi dengan mengukur tingkat akurasi hasil perkiraan suatu model. RMSE dihitung dengan mengkuadratkan error (prediksi – observasi) dibagi dengan jumlah data (= rata-rata), lalu diakarkan.
+
+Nilai RMSE rendah menunjukkan bahwa variasi nilai yang dihasilkan oleh suatu model prakiraan mendekati variasi nilai obeservasinya. RMSE menghitung seberapa berbedanya seperangkat nilai. Semakin kecil nilai RMSE, semakin dekat nilai yang diprediksi dan diamati.
+
+Kelebihan dari RMSE yaitu memiliki tingkat sensitivitas yang cukup tinggi. Sedangkan kekurangannya RMSE tidak menggambarkan kesalahan rata-rata saja namun memiliki implikasi lain yang lebih sulit untuk diurai dan dipahami.
+
+rmse = $\sqrt{\sum\nolimits_{n=1}^n \left((y_i - ŷ_i) ^ 2 \over n \right) }$
+
+Diketahui:
+
+- n = Jumlah Data
+- yi = Actual Value / Nilai Sebenarnya
+- ŷi = Predicted Value / Nilai Prediksi
+
+Hasil Graph Evaluasi
+
+![Loss Train and Test Model Metrics ](https://github.com/dewisnu/laporan-dicoding/assets/63925882/91021a41-b661-4e5c-9f89-e36dd5f5a571)
+
+Gambar 7. <em>Loss Train and Test Model Metrics </em>
+
+Dapat disimpulkan model ini sedikit overfit, seperti yang kita lihat jika dengan data <em> train rmse </em> , tetapi jika dengan data validasi sebaliknya. Ini disebabkan karena sedikit nya improvisasi <em> datasets </em>, dikarenakan keterbatasan komputasi saya hanya bisa memasukan max 100.000 <em>row</em> dalam <em> datasets </em> saja, jika lebih maka akan <em>out of memory</em>.
+
+## Kesimpulan
+
+Setelah melalui beberapa tahap diputuskan bahwa kedua model yang penulis gunakan dapat memprediksi  sesuai dengan apa yang diharapkan meskipun dengan data yang dikikis sebagian. Keterbatasan komputasi merupakan tantangan utama penulis dalam mengerjakan sistem rekomendasi ini, penulis terpaksa memangkas beberapa data supaya dapat dikerjakan oleh sistem.
 
 ###  Daftar Refrensi
 
